@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<!-- saved from url=(0107)http://mp.weixin.qq.com/s?__biz=MzAwOTk4OTE1NA==&mid=100000027&idx=1&sn=a32572769c7e177960d5107473fd6ab9#rd -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+
+<script nonce="MOONSAFE_NONCE" type="text/javascript">
+window.__nonce_str = "MOONSAFE_NONCE"
+if (window.__nonce_str && location.href.indexOf("http://")==0 && Math.random() <= 0.1) {
+	window.__moonsafe_csp_offset || (window.__moonsafe_csp_offset = 18);
+	document.write('<meta http-equiv="Content-Security-Policy" content="script-src \'unsafe-inline\' \'unsafe-eval\' *.qq.com *.weishi.com'+(window.__nonce_str ? ' \'nonce-' + window.__nonce_str + "\'":"")+ ";report_uri " +
+		location.protocol + '//mp.weixin.qq.com/mp/jsmonitor?idkey=29715_'+window.__moonsafe_csp_offset+'_1&lc=1&log0=[moonsafe][csp][wap_reporturi]">');
+        
+}
+</script>
+        <script nonce="MOONSAFE_NONCE" type="text/javascript">
+            window.logs = {
+                pagetime: {}
+            };
+            window.logs.pagetime['html_begin'] = (+new Date());
+        </script>
+        
+<script nonce="MOONSAFE_NONCE" type="text/javascript"> 
+
+    var page_begintime = (+new Date());
+
+    var biz = "MzAwOTk4OTE1NA=="||"";
+    var sn = "a32572769c7e177960d5107473fd6ab9" || ""|| "";
+    var mid = "100000027" || ""|| "";
+    var idx = "1" || "" || "";
+
+    //辟谣需求
+    var is_rumor = ""*1;
+    var norumor = ""*1;
+    if (!!is_rumor&&!norumor){
+      if (!document.referrer || document.referrer.indexOf("mp.weixin.qq.com/mp/rumor") == -1){
+        location.href = "http://mp.weixin.qq.com/mp/rumor?action=info&__biz=" + biz + "&mid=" + mid + "&idx=" + idx + "&sn=" + sn + "#wechat_redirect";
+      }
+    }
+
+    //原创需求，需要跳转到中间页
+    /*
+    var copyrightInfo = {
+        display_source : ""*1,
+        nocopyrightsource : ""*1
+    };
+    if (!!copyrightInfo.display_source&&!copyrightInfo.nocopyrightsource){
+      if (!document.referrer || document.referrer.indexOf("mp.weixin.qq.com/mp/reprint") == -1){
+        location.href = "http://mp.weixin.qq.com/mp/reprint?action=info&__biz=" + biz + "&mid=" + mid + "&idx=" + idx + "&sn=" + sn + "#wechat_redirect";
+      }
+    }*/
+</script>
+<script nonce="MOONSAFE_NONCE" type="text/javascript">
+var MutationObserver = window.WebKitMutationObserver||window.MutationObserver||window.MozMutationObserver;
+var isDangerSrc = function(src) {
+    if(src) {
+        var host = src.match(/http(?:s)?:\/\/([^\/]+?)(\/|$)/);
+        if(host && !/qq\.com(\:8080)?$/.test(host[1]) && !/weishi\.com$/.test(host[1])) {
+            return true;
+        }
+    }
+    return false;
+}
+var ishttp = location.href.indexOf("http://")==0;
+if (ishttp && typeof MutationObserver === 'function' && location.host == 'mp.weixin.qq.com') {
+    window.__observer_data = {count:0, exec_time: 0, list:[]};
+    window.__observer = new MutationObserver(function(mutations) {
+        // 统计触发的次数
+        window.__observer_data.count++;
+        var begin = new Date(), deleteNodes = [];
+        mutations.forEach(function(mutation) {
+            var nodes = mutation.addedNodes;
+            for (var i = 0; i < nodes.length; i++) {
+                var node = nodes[i];
+
+                if (node.tagName === 'SCRIPT') {
+                    var scriptSrc = node.src;
+                    if(isDangerSrc(scriptSrc)) {
+                        window.__observer_data.list.push(scriptSrc);
+                        deleteNodes.push(node);
+                    }
+                
+                }
+            }
+        });
+        for(var i=0; i<deleteNodes.length; i++) {
+            var node = deleteNodes[i];
+            node.parentNode.removeChild(node);
+        }
+        window.__observer_data.exec_time += (new Date() - begin);
+    });
+    window.__observer.observe(document, {subtree: true, childList: true});
+}
+(function() {
+    if (Math.random()<0.01 && ishttp && HTMLScriptElement.prototype.__lookupSetter__ && typeof Object.defineProperty !== "undefined") {
+        window.__danger_src = {xmlhttprequest:[], script_src: [], script_setAttribute: []};
+        var t = "$"+Math.random();
+        // script.src
+        HTMLScriptElement.prototype.__old_method_script_src = HTMLScriptElement.prototype.__lookupSetter__ ('src');
+        HTMLScriptElement.prototype.__defineSetter__ ('src', function(url) {
+            if (url && isDangerSrc(url)) {
+                // console.log("src:"+url);
+                window.__danger_src.script_src.push(url);
+            }
+            this.__old_method_script_src(url);
+        });
+        var element_setAttribute_method = "element_setAttribute"+t;
+        Object.defineProperty(Element.prototype, element_setAttribute_method, {
+            value: Element.prototype.setAttribute,
+            enumerable: false
+        });
+        Element.prototype.setAttribute = function(name, url) {
+            if (this.tagName == 'SCRIPT' && name == 'src' && isDangerSrc(url)) {
+                // console.log("setAttr:"+url);
+                window.__danger_src.script_setAttribute.push(url);
+            }
+            this[element_setAttribute_method](name, url);
+        };
+    }
+})();
+</script>
+
+        <link rel="dns-prefetch" href="http://res.wx.qq.com/">
+<link rel="dns-prefetch" href="http://mmbiz.qpic.cn/">
+<link rel="shortcut icon" type="image/x-icon" href="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/common/favicon22c41b.ico">
+<script nonce="MOONSAFE_NONCE" type="text/javascript">
+    String.prototype.html = function(encode) {
+        var replace =["&#39;", "'", "&quot;", '"', "&nbsp;", " ", "&gt;", ">", "&lt;", "<", "&amp;", "&", "&yen;", "¥"];
+        if (encode) {
+            replace.reverse();
+        }
+        for (var i=0,str=this;i< replace.length;i+= 2) {
+             str=str.replace(new RegExp(replace[i],'g'),replace[i+1]);
+        }
+        return str;
+    };
+
+    window.isInWeixinApp = function() {
+        return /MicroMessenger/.test(navigator.userAgent);
+    };
+
+    window.getQueryFromURL = function(url) {
+        url = url || 'http://qq.com/s?a=b#rd'; 
+        var query = url.split('?')[1].split('#')[0].split('&'),
+            params = {};
+        for (var i=0; i<query.length; i++) {
+            var arg = query[i].split('=');
+            params[arg[0]] = arg[1];
+        }
+        if (params['pass_ticket']) {
+        	params['pass_ticket'] = encodeURIComponent(params['pass_ticket'].html(false).html(false).replace(/\s/g,"+"));
+        }
+        return params;
+    };
+
+    (function() {
+	    var params = getQueryFromURL(location.href);
+        window.uin = params['uin'] || '';
+        window.key = params['key'] || '';
+        window.wxtoken = params['wxtoken'] || '';
+        window.pass_ticket = params['pass_ticket'] || '';
+    })();
+
+</script>
+
+        <title>周南-卷耳</title>
+        
+<link rel="stylesheet" type="text/css" href="./周南-卷耳_files/page_mp_article_improve2e801c.css">
+<style>
+     
+    </style>
+<!--[if lt IE 9]>
+<link rel="stylesheet" type="text/css" href="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/page_mp_article_improve_pc2c9cd6.css">
+<![endif]-->
+<script nonce="MOONSAFE_NONCE" type="text/javascript">
+    document.domain = "qq.com";
+</script>
+
+    <link rel="stylesheet" type="text/css" href="./周南-卷耳_files/not_in_mm2c9cd6.css"></head>
+    <body id="activity-detail" class="zh_CN mm_appmsg not_in_mm" ontouchstart="">
+        
+    <script nonce="MOONSAFE_NONCE" type="text/javascript">
+        var write_sceen_time = (+new Date());
+    </script>
+    
+    <div id="js_cmt_mine" class="discuss_container editing access" style="display:none;">
+        <div class="discuss_container_inner">
+            <h2 class="rich_media_title">周南-卷耳</h2>
+            <span id="log"></span>
+            <div class="frm_textarea_box_wrp">
+                <span class="frm_textarea_box">
+                    <textarea id="js_cmt_input" class="frm_textarea" placeholder="留言将由公众号筛选后显示，对所有人可见。"></textarea>
+                    <div class="emotion_tool">
+                        <span class="emotion_switch" style="display:none;"></span>
+                        <span id="js_emotion_switch" class="pic_emotion_switch_wrp">
+                            <img class="pic_default" src="./周南-卷耳_files/icon_emotion_switch.2x278965.png" alt="">
+                            <img class="pic_active" src="./周南-卷耳_files/icon_emotion_switch_active.2x278965.png" alt="">
+                        </span>
+                        <div class="emotion_panel" id="js_emotion_panel">
+                            <span class="emotion_panel_arrow_wrp" id="js_emotion_panel_arrow_wrp">
+                                <i class="emotion_panel_arrow arrow_out"></i>
+                                <i class="emotion_panel_arrow arrow_in"></i>
+                            </span>
+                            <div class="emotion_list_wrp" id="js_slide_wrapper">
+                                
+                                
+                            </div>
+                            <ul class="emotion_navs" id="js_navbar">
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </span>
+            </div>
+            <div class="discuss_btn_wrp"><a id="js_cmt_submit" class="btn btn_primary btn_discuss btn_disabled" href="javascript:;">提交</a></div>
+            <div class="discuss_list_wrp" style="display:none">
+                <div class="rich_tips with_line title_tips discuss_title_line">
+                    <span class="tips">我的留言</span>
+                </div>
+                <ul class="discuss_list" id="js_cmt_mylist"></ul>
+            </div>
+            <div class="rich_tips tips_global loading_tips" id="js_mycmt_loading">
+                <img src="./周南-卷耳_files/icon_loading_white2805ea.gif" class="rich_icon icon_loading_white" alt="">
+                <span class="tips">加载中</span>
+            </div>
+            <div class="wx_poptips" id="js_cmt_toast" style="display:none;">
+                <img alt="" class="icon_toast" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGoAAABqCAYAAABUIcSXAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3NpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDoyMTUxMzkxZS1jYWVhLTRmZTMtYTY2NS0xNTRkNDJiOGQyMWIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MTA3QzM2RTg3N0UwMTFFNEIzQURGMTQzNzQzMDAxQTUiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MTA3QzM2RTc3N0UwMTFFNEIzQURGMTQzNzQzMDAxQTUiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChNYWNpbnRvc2gpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NWMyOGVjZTMtNzllZS00ODlhLWIxZTYtYzNmM2RjNzg2YjI2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjIxNTEzOTFlLWNhZWEtNGZlMy1hNjY1LTE1NGQ0MmI4ZDIxYiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pmvxj1gAAAVrSURBVHja7J15rF1TFMbXk74q1ZKHGlMkJVIhIgg1FH+YEpEQJCKmGBpThRoSs5jVVNrSQUvEEENIhGiiNf9BiERICCFIRbUiDa2qvudbOetF3Tzv7XWGffa55/uS7593977n3vO7e5+199p7v56BgQGh0tcmvAUERREUQVEERREUQVEERREUQVEERREUQVEERREUQVEERREUQVEERVAUQVEERVAUQbVYk+HdvZVG8b5F0xj4RvhouB+eCy8KrdzDJc1RtAX8ILxvx98V1GyCSkN98Cx4z/95/Wn4fj6j6tUEeN4wkFSnw1MJqj5NhBfAuwaUHREUg4lqNMmePVsHll/HFhVfe1t3FwpJI8DXCCquDrCWNN4B6Tb4M3Z98aTPmTvh0YHl18PXw29yZiKejoPvcUD6E74yFBJbVDk6Bb7K8aP/Hb4c/tRzEYIqprPhSxzlf4Uvhb/0Xoig8qnHAJ3lqPMzfDH8XZ4LEpRf2sVdA5/sqPO9Qfop70UJyn+/boaPddT5yrq7VUUvTIVJI7q74MMddXR8NB1eXcYvhBpZm0s2w72/o86HFoKvLau/pYaXzjLMdUJ6y0LwtWV9CIIaXtvA8+G9HHV03u5q+K+yH47U0NoRngPv7KjzHDwTLj0bS1BDazfJJlcnOOostC6ysnCT+q80G/sIvFVgeW09D8FPVT0uoP7VfvAD8NjA8pqmuAN+OcYAjso0RbIZ8DGB5TVNcRO8JMaHY9SXSdfa3eeANJimWBLrA7JFiZwIXye+NMUV8CcxP2SRFjXefok7NRjSGZJlWUPvw2/wtNiQirSoXWyMsR28wR7AzzYM0oXw+Y7yK+CLJGeaoqjyrJSdZJD6Ov4+z5y6NJc0Az7NUecHydIUy+v60KNyQHoM3nKI1y7YCFiq0i7uBvgER52vDdKqWn9djhY1Dn4G3n6Ecqm2rF74dvgoR53S0hQxW9RJAZAGW5bSn58QJA27dQ7uIEedjywEX5NKVxCqsY6y+qA+LxFI4+yZ6oH0trWkNan80jygtIUsc5SflgAsDXgehfdx1KkkTRE76tN+Xue2jnTU0Ru1oIbvpt30bBtKhOp5yaaRkts0lic8V1i6dPcIRx2d/l8Y8XtNNEg7OOo8bl1kmmOKnDsO88CaYzejau0hWZqiL7C83oCH4SeTHvwV2BqqsHRVztSEYOmWF80NeXZT6Hd4KflResE9vCnBOlCyGfDNAstHTVPUDWoQ1t3iW+9WNizvlhfd4aerXd+ThqiMfNR6+9LvOOro5OY5JX2H4+F7HZD+kGzlamMgldWiirQsjcwWFbjmqZJteekJLK9pisvgL6RhKvuciZiwzrWWGapfrPy30kBVcSBIrw0aD3PU0XB6cehntq7rTMf7/2iQlktDVdXJLXlg6VjmiYBn6rWSTRCH6hvJ0hQrpcGq8oidsmHpTP8t8DGO9/vcWt9qabiqPgup1yKyQwvC2tSefZ73SSpNkUJ4PlLorlHZ+446nc8f3fIyywlJhwrTuwVSjBa1ccvSxN0hjjoK5xVrYZMd9V6XbFfgBukixTwGLg8sDam3dZR/wZ6L/dJlin1en8LS+bgpFbz3Ygvzu1J1HKxYNqxGpCmaCEo12rrBorD6LRp8UbpcdR5VWhTW35KlKd6QFqjuM2XzwlpnMxTvSkuUwuG/Xlg6NtPjbT6WFimF/VG6LEvXgn8QGDjMbBukVECFwhpoS+CQatfX2Q1q6H7wENHdrfCr0lKleEB9JyxNneus+VJpsVL9TwI6W65LovWIGl3KtVJaLv7LBwYTFEERFEVQFEERFEVQFEERFEVQFEERFEVQFEERFEVQFEERFFWq/hFgADUMN4RzT6/OAAAAAElFTkSuQmCC">
+                <p class="toast_content">已留言</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="js_article" class="rich_media">
+        
+        <div id="js_top_ad_area" class="top_banner">
+ 
+        </div>
+                
+
+        <div class="rich_media_inner">
+            <div id="page-content">
+                <div id="img-content" class="rich_media_area_primary">
+                    <h2 class="rich_media_title" id="activity-name">
+                        周南-卷耳 
+                    </h2>
+                    <div class="rich_media_meta_list">
+                        						                        <em id="post-date" class="rich_media_meta rich_media_meta_text">2016-06-16</em>
+
+                                                <em class="rich_media_meta rich_media_meta_text">gmth</em>
+                                                <a class="rich_media_meta rich_media_meta_link rich_media_meta_nickname" href="javascript:void(0);" id="post-user">冠冕堂皇</a>
+                        <span class="rich_media_meta rich_media_meta_text rich_media_meta_nickname">冠冕堂皇</span>
+
+                        <div id="js_profile_qrcode" class="profile_container" style="display:none;">
+                            <div class="profile_inner">
+                                <strong class="profile_nickname">冠冕堂皇</strong>
+                                <img class="profile_avatar" id="js_profile_qrcode_img" src="" alt="">
+
+                                <p class="profile_meta">
+                                <label class="profile_meta_label">微信号</label>
+                                <span class="profile_meta_value"></span>
+                                </p>
+
+                                <p class="profile_meta">
+                                <label class="profile_meta_label">功能介绍</label>
+                                <span class="profile_meta_value">我的读经之路</span>
+                                </p>
+                                
+                            </div>
+                            <span class="profile_arrow_wrp" id="js_profile_arrow_wrp">
+                                <i class="profile_arrow arrow_out"></i>
+                                <i class="profile_arrow arrow_in"></i>
+                            </span>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    
+                                                            
+                                                            
+                    
+                    <div class="rich_media_content " id="js_content">
+                        
+
+                        
+                        <p style="text-align:center"><span style="font-family:宋体">周南</span>-<span style="font-family:宋体">卷耳</span></p><p>&nbsp;</p><p style=";margin-bottom:.1px"><span style="font-size: 21px;font-family: 黑体">采采卷耳，不盈顷筐。嗟我怀人，置彼周行。</span></p><p style=";margin-bottom:.1px"><span style="font-size: 21px;font-family: 黑体">陟彼崔嵬，我马虺隤。我姑酌彼金罍，维以不永怀。</span></p><p style=";margin-bottom:.1px"><span style="font-size: 21px;font-family: 黑体">陟彼高冈，我马玄黄。我姑酌彼兕觥，维以不永伤。</span></p><p style=";margin-bottom:.1px"><span style="font-size: 21px;font-family: 黑体">陟彼砠矣，我马</span><span style="font-size:21px;font-family:黑体">瘏矣！我仆痡矣！云何吁矣！</span></p><p>&nbsp;</p><p><span style="font-family:宋体">【采采】：采了又采。</span></p><p><span style="font-family:宋体">【卷耳】：一种菊科植物，叶如鼠耳，嫩苗可食，又名苓耳。多年生疏丛草本，高</span>10-35<span style="font-family:宋体">厘米。茎基部匍匐，上部直立，绿色并带淡紫红色，下部被下向的毛，上部混生腺毛。叶片线状披针形或长圆状披针形，长</span>1-2.5<span style="font-family:宋体">厘米，宽</span>1.5-4<span style="font-family:宋体">毫米，顶端急尖，基部楔形，抱茎，被疏长柔毛，叶腋具不育短枝。聚伞花序顶生，具</span>3-7<span style="font-family:宋体">花；苞片披针形，草质，被柔毛，边缘膜质；花梗细，长</span>1-1.5<span style="font-family:宋体">厘米，密被白色腺柔毛；萼片</span>5<span style="font-family:宋体">，披针形，长约</span>6<span style="font-family:宋体">毫米，宽</span>1.5-2<span style="font-family:宋体">毫米，顶端钝尖，边缘膜质，外面密被长柔毛；花瓣</span>5<span style="font-family:宋体">，白色，倒卵形，比萼片长</span>l<span style="font-family:宋体">倍或更长，顶端</span>2<span style="font-family:宋体">裂深达</span>1/4-1/3<span style="font-family:宋体">；雄蕊</span>10<span style="font-family:宋体">，短于花瓣；花柱</span>5<span style="font-family:宋体">，线形。蒴果长圆形，长于宿存萼</span>1/3<span style="font-family:宋体">，顶端倾斜，</span>10<span style="font-family:宋体">齿裂；种子肾形，褐色，略扁，具瘤状凸起。花期</span>5-8<span style="font-family:宋体">月，果期</span>7-9<span style="font-family:宋体">月。</span></p><table cellspacing="0" cellpadding="0"><tbody><tr><td width="206" valign="top" style="padding: 0px 7px; word-break: break-all;"><p><img data-s="300,640" data-type="jpeg" data-src="http://mmbiz.qpic.cn/mmbiz/L8ScfAa5XykgFnRicC0ic7DvB250Q6TGpwG7X9rsdn8smHNz3BOSJjYydRw1FibYo6uNnAAL1o5h6KAcZdCibrdxew/0?wx_fmt=jpeg" data-ratio="1.3333333333333333" data-w="195" src="./周南-卷耳_files/640" style="width: auto !important; visibility: visible !important; height: auto !important;"><br></p></td><td width="300" valign="top" style="padding: 0px 7px;"><p><img data-s="300,640" data-type="jpeg" data-src="http://mmbiz.qpic.cn/mmbiz/L8ScfAa5XykgFnRicC0ic7DvB250Q6TGpwneRrMQPLwYkACje3bwpHNEeiaCBVpqQPPzvpWW1VJNlr8PApsQNLLxA/0?wx_fmt=jpeg" data-ratio="0.6933333333333334" data-w="300" src="./周南-卷耳_files/640(1)" style="width: auto !important; visibility: visible !important; height: auto !important;"><br></p></td></tr><tr><td width="506" colspan="2" valign="top" style="padding: 0px 7px;"><p><img data-type="gif" data-src="http://mmbiz.qpic.cn/mmbiz/L8ScfAa5XykgFnRicC0ic7DvB250Q6TGpwbHSRhibOYzWjNYogalPsADNHibrD6NQYrEhyzYibQsQsWsiccziaghSy9Qw/0?wx_fmt=gif" data-ratio="0.5732984293193717" data-w="382" src="./周南-卷耳_files/0" style="width: auto !important; visibility: visible !important; height: auto !important;"><br></p></td></tr></tbody></table><p><span style="font-family:宋体">【盈】：满。</span></p><p><span style="font-family:宋体">【顷（</span><span style="font-size:15px;font-family:Arial,sans-serif;color:#660000;background:white">qīng</span><span style="font-family:宋体">）筐】：斜口筐子，后高前低。她采集了许久，采下的苓耳连斜口筐子还没有装满。这是因为她想念丈夫，没有心思劳作。</span></p><p><span style="font-family:宋体">【嗟（</span><span style="font-size:15px;font-family:Arial,sans-serif;color:#660000;background:white">jiē</span><span style="font-family:宋体">）我怀人】：嗟，感叹的声音。我，女子自称。怀，想念。</span></p><p><span style="font-family:宋体">【置彼周行（</span><span style="font-size:15px;font-family:Arial,sans-serif;color:#660000;background:white">háng</span><span style="font-family:宋体">）】：置，放。彼，指顷筐。周行，大路。把筐子放到大路边。是因为她迫切想念丈夫，以致不自主的跑到路上张望了。</span></p><p><span style="font-family:宋体">【陟（</span><span style="font-size:15px;font-family:Arial,sans-serif;color:#660000;background:white">zhì</span><span style="font-family:宋体">）彼崔嵬（</span><span style="font-size:15px;font-family:Arial,sans-serif;color:#660000;background:white">wéi&nbsp;</span><span style="font-family:宋体">）】：陟，登上。崔嵬，高山。此句以下都是女子想象她丈夫在外劳累和相思的情形。</span></p><p><span style="font-family:宋体">【虺（</span><span style="font-size:15px;font-family:Arial,sans-serif;color:#660000;background:white">huī</span><span style="font-family:宋体">）隤（</span><span style="font-size:15px;font-family:Arial,sans-serif;color:#660000;background:white">tuí</span><span style="font-family:宋体">）】：虺隤，疲劳生病，多用于马。隤，倒下。</span></p><p><span style="font-family:宋体">【我姑酌彼金罍（</span><span style="font-size:15px;font-family:Arial,sans-serif;color:#660000;background:white">léi</span><span style="font-family:宋体">）】：姑，姑且。酌，饮酒。金罍，铜铸的酒器。</span></p><p><span style="font-family:宋体">【维以不永怀】：维，语气助词。以，介词，后面省略宾语“之”，是“借此”的意思。永怀，长久的想念。这一章头两句想象丈夫行役在外翻山越岭，连马也累病了；后两句写他借酒浇愁，求得暂且忘却对家乡亲人的思念的痛苦。下章同此。</span></p><p><span style="font-family:宋体">【冈】：同岗。</span></p><p><span style="font-family:宋体">【玄黄】：病。</span></p><p><span style="line-height: 1.6; font-family: 宋体;">【兕（</span><span style="font-size: 15px; font-family: Arial, sans-serif; color: rgb(102, 0, 0); background: white;">sì</span><span style="line-height: 1.6; font-family: 宋体;">）觥（</span><span style="font-size: 15px; font-family: Arial, sans-serif; color: rgb(102, 0, 0); background: white;">gōng</span><span style="line-height: 1.6; font-family: 宋体;">）】：像兕的酒杯。兕，独角犀牛。觥，酒杯。</span><br></p><p></p><p><span style="font-family:宋体"><img data-s="300,640" data-type="jpeg" data-src="http://mmbiz.qpic.cn/mmbiz/L8ScfAa5XykgFnRicC0ic7DvB250Q6TGpwPElYHH1ztI8cCEcp5uiaSZ0uNrLxjms6oPCrc9xOEg0sUCBu8bjmib4w/0?wx_fmt=jpeg" data-ratio="1.1538461538461537" data-w="260" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkJDQzA1MTVGNkE2MjExRTRBRjEzODVCM0Q0NEVFMjFBIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkJDQzA1MTYwNkE2MjExRTRBRjEzODVCM0Q0NEVFMjFBIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QkNDMDUxNUQ2QTYyMTFFNEFGMTM4NUIzRDQ0RUUyMUEiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QkNDMDUxNUU2QTYyMTFFNEFGMTM4NUIzRDQ0RUUyMUEiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6p+a6fAAAAD0lEQVR42mJ89/Y1QIABAAWXAsgVS/hWAAAAAElFTkSuQmCC" style="width: 260px !important; visibility: visible !important; height: 300px !important;"><br></span><br></p><p><span style="font-family:宋体">【砠（</span><span style="font-size:15px;font-family:Arial,sans-serif;color:#660000;background:white">jū</span><span style="font-family:宋体">）】：多石头的山。“崔巍”、“高冈”和“砠”，意义相同，押韵。类似有“虺隤”，“玄黄”和“瘏”。</span></p><p><span style="font-family:宋体">【瘏（</span><span style="font-size:15px;font-family:Arial,sans-serif;color:#660000;background:white">tú</span><span style="font-family:宋体">）】：瘏，疲劳致病。</span></p><p><span style="font-family:宋体">【痡（</span><span style="font-size:15px;font-family:Arial,sans-serif;color:#660000;background:white">pū</span><span style="font-family:宋体">）】痡，疲劳致病。</span></p><p><span style="font-family:宋体">【云何吁（</span><span style="font-size:15px;font-family:Arial,sans-serif;color:#660000;background:white">xū</span><span style="font-family:宋体">）矣】：何，多么。吁，同吁（</span><span style="font-size:15px;font-family:Arial,sans-serif;color:#660000;background:white">xū</span><span style="font-family:宋体">），叹息，引为忧愁。即，我多么忧愁啊。</span></p><p>&nbsp;</p><p>&nbsp;</p><p><br></p>
+                    </div>
+                    <script nonce="MOONSAFE_NONCE" type="text/javascript">
+                        var first_sceen__time = (+new Date());
+
+                        if ("" == 1 && document.getElementById('js_content'))
+                            document.getElementById('js_content').addEventListener("selectstart",function(e){ e.preventDefault(); });
+
+                                        (function(){
+                            if (navigator.userAgent.indexOf("WindowsWechat") != -1){
+                                var link = document.createElement('link');
+                                var head = document.getElementsByTagName('head')[0];
+                                link.rel = 'stylesheet';
+                                link.type = 'text/css';
+                                link.href = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/page_mp_article_improve_winwx2c9cd6.css";
+                                head.appendChild(link);
+                            }
+                        })();
+                    </script>
+                    <link rel="stylesheet" type="text/css" href="./周南-卷耳_files/page_mp_article_improve_combo2e4987.css">
+                    
+                    
+                                        
+                                        
+                                        <div class="rich_media_tool" id="js_toobar3">
+                                                                    <div id="js_read_area3" class="media_tool_meta tips_global meta_primary" style="display:none;">阅读 <span id="readNum3"></span></div>
+
+                        <span style="display:none;" class="media_tool_meta meta_primary tips_global meta_praise" id="like3">
+                            <i class="icon_praise_gray"></i><span class="praise_num" id="likeNum3"></span>
+                        </span>
+
+                        <a id="js_report_article3" style="display:none;" class="media_tool_meta tips_global meta_extra" href="javascript:void(0);">投诉</a>
+
+                    </div>
+
+
+
+                                    </div>
+
+                <div class="rich_media_area_primary sougou" id="sg_tj" style="display:none">
+
+                </div>
+
+                <div class="rich_media_area_extra">
+
+                    
+                                        <div class="mpda_bottom_container" id="js_bottom_ad_area">
+                        
+                    </div>
+                                        
+                    <div id="js_iframetest" style="display:none;"></div>
+                                        
+                                    </div>
+               
+            </div>
+            <div id="js_pc_qr_code" class="qr_code_pc_outer" style="display: block;">
+                <div class="qr_code_pc_inner">
+                    <div class="qr_code_pc">
+                        <img id="js_pc_qr_code_img" class="qr_code_pc_img" src="./周南-卷耳_files/qrcode">
+                        <p>微信扫一扫<br>关注该公众号</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+        
+        <script nonce="MOONSAFE_NONCE">
+    var __DEBUGINFO = {
+        debug_js : "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/debug/console2ca724.js",
+        safe_js : "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/safe/moonsafe2e21ab.js",
+        res_list: []
+    };
+</script>
+        <script nonce="MOONSAFE_NONCE">window.moon_map = {"appmsg/emotion/caret.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/caret278965.js","biz_wap/jsapi/cardticket.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/cardticket275627.js","appmsg/emotion/map.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/map278965.js","appmsg/emotion/textarea.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/textarea27cdc5.js","appmsg/emotion/nav.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/nav278965.js","appmsg/emotion/common.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/common278965.js","appmsg/emotion/slide.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/slide2a9cd9.js","pages/report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/report2e9114.js","pages/music_player.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/music_player2b674b.js","pages/loadscript.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/loadscript2c9cd6.js","appmsg/emotion/dom.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/dom278965.js","biz_wap/utils/hashrouter.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/hashrouter2805ea.js","a/gotoappdetail.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/gotoappdetail2a2c13.js","a/ios.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/ios275627.js","a/android.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/android2c5484.js","a/profile.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/profile29b1f8.js","a/mpshop.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/mpshop2da3e2.js","a/card.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/card2d1390.js","biz_wap/utils/position.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/position29b1f8.js","appmsg/a_report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/a_report2e2d45.js","biz_common/utils/respTypes.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/respTypes2c57d0.js","appmsg/cmt_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cmt_tpl.html2a2c13.js","sougou/a_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/sougou/a_tpl.html2c6e7c.js","appmsg/emotion/emotion.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/emotion2a9cd9.js","biz_common/utils/report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/report275627.js","biz_common/utils/huatuo.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/huatuo293afc.js","biz_common/utils/cookie.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/cookie275627.js","pages/voice_component.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/voice_component2c5484.js","new_video/ctl.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/new_video/ctl2d441f.js","biz_common/utils/monitor.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/monitor2a30ee.js","biz_common/utils/spin.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/spin275627.js","biz_wap/jsapi/pay.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/pay275627.js","appmsg/reward_entry.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/reward_entry2e21d7.js","appmsg/comment.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/comment2d39f3.js","appmsg/like.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/like2b5583.js","appmsg/a.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/a2da3e2.js","pages/version4video.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/version4video2e481d.js","rt/appmsg/getappmsgext.rt.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/rt/appmsg/getappmsgext.rt2c21f6.js","biz_wap/utils/storage.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/storage2a74ac.js","biz_common/tmpl.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/tmpl2b3578.js","appmsg/img_copyright_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/img_copyright_tpl.html2a2c13.js","appmsg/a_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/a_tpl.html2d1390.js","biz_common/ui/imgonepx.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/ui/imgonepx275627.js","biz_common/dom/attr.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/dom/attr275627.js","biz_wap/utils/ajax.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/ajax2c7a90.js","biz_common/utils/string/html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/string/html29f4e9.js","sougou/index.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/sougou/index2c7543.js","biz_wap/safe/mutation_observer_report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/safe/mutation_observer_report2d5cb8.js","appmsg/report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/report2e9709.js","biz_common/dom/class.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/dom/class275627.js","appmsg/report_and_source.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/report_and_source2c0ff9.js","appmsg/page_pos.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/page_pos2e9709.js","appmsg/cdn_speed_report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cdn_speed_report2c57d0.js","appmsg/wxtopic.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/wxtopic2e4987.js","appmsg/voice.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/voice2ab8bd.js","appmsg/qqmusic.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/qqmusic2ab8bd.js","appmsg/iframe.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/iframe2e69b8.js","appmsg/review_image.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/review_image2d0cfe.js","appmsg/outer_link.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/outer_link275627.js","biz_wap/jsapi/core.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/core2c30c1.js","biz_common/dom/event.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/dom/event275627.js","appmsg/copyright_report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/copyright_report2c57d0.js","appmsg/cache.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cache2a74ac.js","appmsg/pay_for_reading.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/pay_for_reading2c5484.js","appmsg/async.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/async2e416f.js","biz_wap/ui/lazyload_img.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/ui/lazyload_img2b18f6.js","biz_common/log/jserr.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/log/jserr2805ea.js","appmsg/share.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/share2e74e2.js","biz_wap/utils/mmversion.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/mmversion275627.js","appmsg/cdn_img_lib.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cdn_img_lib275627.js","biz_common/utils/url/parse.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/url/parse2dd7fd.js","biz_wap/utils/device.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/device2b3aae.js","biz_wap/jsapi/a8key.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/a8key2a30ee.js","appmsg/index.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/index2e9796.js"};</script><script nonce="MOONSAFE_NONCE" type="text/javascript" src="./周南-卷耳_files/moon2e9760.js"></script>
+    <script id="topic_tpl" type="text/html">        
+        <span class="db topic_wrp">
+            <span class="topic_thumb" style="background-image:url({img_url});"></span>
+            <span class="topic_content">
+                <strong class="topic_title">{title}</strong>
+                <span class="topic_desc">{author}</span>
+                <span class="topic_info">
+                    <span class="topic_info_extra"><span class="icon_topic"></span>话题</span>
+                    <span class="topic_info_primary">相关文章{msg_num}篇</span>
+                </span>
+            </span>
+        </span>
+    </script>
+    <script id="voice_tpl" type="text/html">        
+        <span id="voice_main_<#=voiceid#>_<#=posIndex#>" class="db audio_area <#if(!musicSupport){#> unsupport<#}#>">
+            <span class="tc tips_global unsupport_tips" <#if(show_not_support!==true){#>style="display:none;"<#}#>>
+            当前浏览器不支持播放音乐或语音，请在微信或其他浏览器中播放            </span>
+            <span class="audio_wrp db">
+                <span id="voice_play_<#=voiceid#>_<#=posIndex#>" class="audio_play_area">
+                    <i class="icon_audio_default"></i>
+                    <i class="icon_audio_playing"></i>
+                    <img src="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/audio/icon_audio_unread26f1f1.png" alt="" class="pic_audio_default">
+                </span>
+                <span class="audio_length tips_global"><#=duration_str#></span>
+                <span class="db audio_info_area">
+                    <strong class="db audio_title"><#=title#></strong>
+                    <span class="audio_source tips_global"><#if(window.nickname){#>来自<#=window.nickname#><#}#></span>
+                </span>
+                <span id="voice_progress_<#=voiceid#>_<#=posIndex#>" class="progress_bar" style="width:0px;"></span>
+            </span>
+        </span>
+    </script>
+
+    <script id="qqmusic_tpl" type="text/html">        
+        <span id="qqmusic_main_<#=comment_id#>_<#=posIndex#>" class="db qqmusic_area <#if(!musicSupport){#> unsupport<#}#>">
+            <span class="tc tips_global unsupport_tips" <#if(show_not_support!==true){#>style="display:none;"<#}#>>
+            当前浏览器不支持播放音乐或语音，请在微信或其他浏览器中播放            </span>
+            <span class="db qqmusic_wrp">
+                <span class="db qqmusic_bd">
+                    <span id="qqmusic_play_<#=musicid#>_<#=posIndex#>" class="play_area">
+                        <i class="icon_qqmusic_switch"></i>
+                        <img src="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/qqmusic/icon_qqmusic_default.2x26f1f1.png" alt="" class="pic_qqmusic_default">
+                        <img src="<#=music_img#>" data-autourl="<#=audiourl#>" data-musicid="<#=musicid#>" class="qqmusic_thumb" alt="">
+                    </span>
+                                        <a id="qqmusic_home_<#=musicid#>_<#=posIndex#>" href="javascript:void(0);" class="access_area">
+                        <span class="qqmusic_songname"><#=music_name#></span>
+                        <span class="qqmusic_singername"><#=singer#></span>
+                        <span class="qqmusic_source"><img src="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/qqmusic/icon_qqmusic_source263724.png" alt=""></span>
+                    </a>
+                </span>
+            </span>       
+        </span>
+    </script>
+  <script nonce="MOONSAFE_NONCE" type="text/javascript">
+      var not_in_mm_css = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/not_in_mm2c9cd6.css";
+      var windowwx_css = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/page_mp_article_improve_winwx2c9cd6.css";
+      var tid = "";
+      var aid = "";
+      var clientversion = "0";
+      var appuin = "MzAwOTk4OTE1NA=="||"";
+
+      var source = "";
+      var scene = 75;
+      
+      var itemidx = "";
+
+      var _copyright_stat = "0";
+      var _ori_article_type = "";
+
+      var nickname = "冠冕堂皇";
+      var appmsg_type = "6";
+      var ct = "1466072221";
+      var publish_time = "2016-06-16" || "";
+      var user_name = "gh_dfdca217bbda";
+      var user_name_new = "";
+      var fakeid   = "";
+      var version   = "";
+      var is_limit_user   = "0";
+      var round_head_img = "http://mmbiz.qpic.cn/mmbiz/L8ScfAa5XykfSPzI8mjP72MibFLUvoo7ejWib4w7T66yK40212nQ2dJMf9fYocj724lbiaJoG2ybR66Bj53wvDL4A/0?wx_fmt=png";
+      var msg_title = "周南-卷耳";
+      var msg_desc = "周南-卷耳&nbsp;采采卷耳，不盈顷筐。嗟我怀人，置彼周行。陟彼崔嵬，我马虺隤。我姑酌彼金罍，维以不永怀。陟彼高冈，";
+      var msg_cdn_url = "http://mmbiz.qpic.cn/mmbiz/L8ScfAa5XykfSPzI8mjP72MibFLUvoo7eVeWAHRDojCp2UJ2ib2RDdMY0mQ8ZWkuVo0nibMhUu1XPPPgCrunAT4MA/0?wx_fmt=jpeg";
+      var msg_link = "http://mp.weixin.qq.com/s?__biz=MzAwOTk4OTE1NA==&amp;mid=100000027&amp;idx=1&amp;sn=a32572769c7e177960d5107473fd6ab9#rd";
+      var user_uin = "0"*1;
+      var msg_source_url = '';
+      var img_format = 'jpeg';
+      var srcid = '';
+      var networkType;
+      var appmsgid = '' || '100000027'|| "";
+      var comment_id = "0" * 1;
+      var comment_enabled = "" * 1;
+      var is_need_reward = "0" * 1;
+      var is_https_res = ("" * 1) && (location.protocol == "https:");
+
+      var devicetype = "";
+      var source_username = "";  
+      var profile_ext_signature = "" || "";
+      var reprint_ticket = "";
+      var source_mid = "";
+      var source_idx = "";
+
+      var show_comment = "";
+      var __appmsgCgiData = {
+            can_use_page : "0"*1,
+            is_wxg_stuff_uin : "0"*1,
+            card_pos : "",
+            copyright_stat : "0",
+            source_biz : "",
+            hd_head_img : "http://wx.qlogo.cn/mmhead/Q3auHgzwzM5f1UviauUGGgPibaWv2KCGg2752lRKb3fHJKicvARAZlQibg/0"||(window.location.protocol+"//"+window.location.host + "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/pic/appmsg/pic_rumor_link.2x264e76.jpg")
+      };
+      var _empty_v = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/pic/pages/voice/empty26f1f1.mp3";
+
+      var copyright_stat = "0" * 1;
+
+      var pay_fee = "" * 1;
+      var pay_timestamp = "";
+      var need_pay = "" * 1;
+
+      var need_report_cost = "0" * 1;
+      var use_tx_video_player = "0" * 1;
+
+      var friend_read_source = "" || "";
+      var friend_read_version = "" || "";
+      var friend_read_class_id = "" || "";
+
+      var is_only_read = "1" * 1;
+
+      var topic_default_img = 'http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/topic/pic_book_thumb.2x2e4987.png';
+
+      // 话题卡片相关数据
+      var wxtopic = {
+        isbn : ""    // 书籍
+      };
+
+      var svr_time = "1466608943" * 1;
+      
+            window.wxtoken = "";
+          if(!!window.__initCatch){
+        window.__initCatch({
+            idkey : 27613,
+            startKey : 0,
+            limit : 128,
+            reportOpt : {
+                uin : uin,
+                biz : biz,
+                mid : mid,
+                idx : idx,
+                sn  : sn
+            },
+            extInfo : {
+                network_rate : 0.01    //网络错误采样率
+            }
+        });
+    }
+  </script>
+  <script nonce="MOONSAFE_NONCE" type="text/javascript">
+    var real_show_page_time = +new Date();
+    window.addEventListener("load", function(){
+        window.onload_endtime = +new Date();
+    });
+          seajs.use('appmsg/index.js');
+  </script>
+
+    
+
+
+ 
+</body><style type="text/css" id="17838059180"></style></html>
