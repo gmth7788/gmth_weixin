@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<!-- saved from url=(0223)http://mp.weixin.qq.com/s?__biz=MzAwOTk4OTE1NA==&tempkey=1hA8IBum5K5TRTUKOwPCkeieQgGlTbxlWTgOeM45f42kBYpwLeeBA3kRNyoMnRD7pygOVPBTXPxu%2B%2FjNngBle03mmVQHhV0zVGTzAFw7gSDBBzKRLe%2FPKVU83MnIEM1Ov5hyC3EAirJ8Oaf9tBz8Bg%3D%3D&#rd -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+
+<script nonce="MOONSAFE_NONCE_1467802513" type="text/javascript">
+window.__nonce_str = "MOONSAFE_NONCE_1467802513"
+if (window.__nonce_str && location.href.indexOf("http://")==0) {
+	window.__moonsafe_csp_offset || (window.__moonsafe_csp_offset = 18);
+	document.write('<meta http-equiv="Content-Security-Policy" content="script-src \'unsafe-inline\' \'unsafe-eval\' *.qq.com *.weishi.com'+(window.__nonce_str ? ' \'nonce-' + window.__nonce_str + "\'":"")+ '">');
+        
+}
+</script><meta http-equiv="Content-Security-Policy" content="script-src &#39;unsafe-inline&#39; &#39;unsafe-eval&#39; *.qq.com *.weishi.com &#39;nonce-MOONSAFE_NONCE_1467802513&#39;">
+
+        <script nonce="MOONSAFE_NONCE_1467802513" type="text/javascript">
+            window.logs = {
+                pagetime: {}
+            };
+            window.logs.pagetime['html_begin'] = (+new Date());
+        </script>
+        
+<script nonce="MOONSAFE_NONCE_1467802513" type="text/javascript"> 
+
+    var page_begintime = (+new Date());
+
+    var biz = "MzAwOTk4OTE1NA=="||"";
+    var sn = "" || ""|| "12a484885176d8a4f76de81cae989a63";
+    var mid = "100000075" || ""|| "100000075";
+    var idx = "1" || "" || "1";
+
+    //辟谣需求
+    var is_rumor = ""*1;
+    var norumor = ""*1;
+    if (!!is_rumor&&!norumor){
+      if (!document.referrer || document.referrer.indexOf("mp.weixin.qq.com/mp/rumor") == -1){
+        location.href = "http://mp.weixin.qq.com/mp/rumor?action=info&__biz=" + biz + "&mid=" + mid + "&idx=" + idx + "&sn=" + sn + "#wechat_redirect";
+      }
+    }
+
+    //原创需求，需要跳转到中间页
+    /*
+    var copyrightInfo = {
+        display_source : ""*1,
+        nocopyrightsource : ""*1
+    };
+    if (!!copyrightInfo.display_source&&!copyrightInfo.nocopyrightsource){
+      if (!document.referrer || document.referrer.indexOf("mp.weixin.qq.com/mp/reprint") == -1){
+        location.href = "http://mp.weixin.qq.com/mp/reprint?action=info&__biz=" + biz + "&mid=" + mid + "&idx=" + idx + "&sn=" + sn + "#wechat_redirect";
+      }
+    }*/
+</script>
+<script nonce="MOONSAFE_NONCE_1467802513" type="text/javascript">
+var MutationObserver = window.WebKitMutationObserver||window.MutationObserver||window.MozMutationObserver;
+var isDangerSrc = function(src) {
+    if(src) {
+        var host = src.match(/http(?:s)?:\/\/([^\/]+?)(\/|$)/);
+        if(host && !/qq\.com(\:8080)?$/.test(host[1]) && !/weishi\.com$/.test(host[1])) {
+            return true;
+        }
+    }
+    return false;
+}
+var ishttp = location.href.indexOf("http://")==0;
+if (ishttp && typeof MutationObserver === 'function' && location.host == 'mp.weixin.qq.com') {
+    window.__observer_data = {count:0, exec_time: 0, list:[]};
+    window.__observer = new MutationObserver(function(mutations) {
+        // 统计触发的次数
+        window.__observer_data.count++;
+        var begin = new Date(), deleteNodes = [];
+        mutations.forEach(function(mutation) {
+            var nodes = mutation.addedNodes;
+            for (var i = 0; i < nodes.length; i++) {
+                var node = nodes[i];
+
+                if (node.tagName === 'SCRIPT') {
+                    var scriptSrc = node.src;
+                    if(isDangerSrc(scriptSrc)) {
+                        window.__observer_data.list.push(scriptSrc);
+                        deleteNodes.push(node);
+                    }
+                
+                }
+            }
+        });
+        for(var i=0; i<deleteNodes.length; i++) {
+            var node = deleteNodes[i];
+            node.parentNode.removeChild(node);
+        }
+        window.__observer_data.exec_time += (new Date() - begin);
+    });
+    window.__observer.observe(document, {subtree: true, childList: true});
+}
+(function() {
+    if (Math.random()<0.01 && ishttp && HTMLScriptElement.prototype.__lookupSetter__ && typeof Object.defineProperty !== "undefined") {
+        window.__danger_src = {xmlhttprequest:[], script_src: [], script_setAttribute: []};
+        var t = "$"+Math.random();
+        // script.src
+        HTMLScriptElement.prototype.__old_method_script_src = HTMLScriptElement.prototype.__lookupSetter__ ('src');
+        HTMLScriptElement.prototype.__defineSetter__ ('src', function(url) {
+            if (url && isDangerSrc(url)) {
+                // console.log("src:"+url);
+                window.__danger_src.script_src.push(url);
+            }
+            this.__old_method_script_src(url);
+        });
+        var element_setAttribute_method = "element_setAttribute"+t;
+        Object.defineProperty(Element.prototype, element_setAttribute_method, {
+            value: Element.prototype.setAttribute,
+            enumerable: false
+        });
+        Element.prototype.setAttribute = function(name, url) {
+            if (this.tagName == 'SCRIPT' && name == 'src' && isDangerSrc(url)) {
+                // console.log("setAttr:"+url);
+                window.__danger_src.script_setAttribute.push(url);
+            }
+            this[element_setAttribute_method](name, url);
+        };
+    }
+})();
+</script>
+
+        <link rel="dns-prefetch" href="http://res.wx.qq.com/">
+<link rel="dns-prefetch" href="http://mmbiz.qpic.cn/">
+<link rel="shortcut icon" type="image/x-icon" href="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/common/favicon22c41b.ico">
+<script nonce="MOONSAFE_NONCE_1467802513" type="text/javascript">
+    String.prototype.html = function(encode) {
+        var replace =["&#39;", "'", "&quot;", '"', "&nbsp;", " ", "&gt;", ">", "&lt;", "<", "&amp;", "&", "&yen;", "¥"];
+        if (encode) {
+            replace.reverse();
+        }
+        for (var i=0,str=this;i< replace.length;i+= 2) {
+             str=str.replace(new RegExp(replace[i],'g'),replace[i+1]);
+        }
+        return str;
+    };
+
+    window.isInWeixinApp = function() {
+        return /MicroMessenger/.test(navigator.userAgent);
+    };
+
+    window.getQueryFromURL = function(url) {
+        url = url || 'http://qq.com/s?a=b#rd'; 
+        var query = url.split('?')[1].split('#')[0].split('&'),
+            params = {};
+        for (var i=0; i<query.length; i++) {
+            var arg = query[i].split('=');
+            params[arg[0]] = arg[1];
+        }
+        if (params['pass_ticket']) {
+        	params['pass_ticket'] = encodeURIComponent(params['pass_ticket'].html(false).html(false).replace(/\s/g,"+"));
+        }
+        return params;
+    };
+
+    (function() {
+	    var params = getQueryFromURL(location.href);
+        window.uin = params['uin'] || '';
+        window.key = params['key'] || '';
+        window.wxtoken = params['wxtoken'] || '';
+        window.pass_ticket = params['pass_ticket'] || '';
+    })();
+
+</script>
+
+        <title>鄘风-定之方中</title>
+        
+<link rel="stylesheet" type="text/css" href="./鄘风-定之方中_files/page_mp_article_improve2eb52b.css">
+<style>
+     
+    </style>
+<!--[if lt IE 9]>
+<link rel="stylesheet" type="text/css" href="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/page_mp_article_improve_pc2c9cd6.css">
+<![endif]-->
+<script nonce="MOONSAFE_NONCE_1467802513" type="text/javascript">
+    document.domain = "qq.com";
+</script>
+
+    <link rel="stylesheet" type="text/css" href="./鄘风-定之方中_files/not_in_mm2c9cd6.css"></head>
+    <body id="activity-detail" class="zh_CN mm_appmsg not_in_mm" ontouchstart="">
+        
+    <script nonce="MOONSAFE_NONCE_1467802513" type="text/javascript">
+        var write_sceen_time = (+new Date());
+    </script>
+    
+    <div id="js_cmt_mine" class="discuss_container editing access" style="display:none;">
+        <div class="discuss_container_inner">
+            <h2 class="rich_media_title">鄘风-定之方中</h2>
+            <span id="log"></span>
+            <div class="frm_textarea_box_wrp">
+                <span class="frm_textarea_box">
+                    <textarea id="js_cmt_input" class="frm_textarea" placeholder="留言将由公众号筛选后显示，对所有人可见。"></textarea>
+                    <div class="emotion_tool">
+                        <span class="emotion_switch" style="display:none;"></span>
+                        <span id="js_emotion_switch" class="pic_emotion_switch_wrp">
+                            <img class="pic_default" src="./鄘风-定之方中_files/icon_emotion_switch.2x278965.png" alt="">
+                            <img class="pic_active" src="./鄘风-定之方中_files/icon_emotion_switch_active.2x278965.png" alt="">
+                        </span>
+                        <div class="emotion_panel" id="js_emotion_panel">
+                            <span class="emotion_panel_arrow_wrp" id="js_emotion_panel_arrow_wrp">
+                                <i class="emotion_panel_arrow arrow_out"></i>
+                                <i class="emotion_panel_arrow arrow_in"></i>
+                            </span>
+                            <div class="emotion_list_wrp" id="js_slide_wrapper">
+                                
+                                
+                            </div>
+                            <ul class="emotion_navs" id="js_navbar">
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </span>
+            </div>
+            <div class="discuss_btn_wrp"><a id="js_cmt_submit" class="btn btn_primary btn_discuss btn_disabled" href="javascript:;">提交</a></div>
+            <div class="discuss_list_wrp" style="display:none">
+                <div class="rich_tips with_line title_tips discuss_title_line">
+                    <span class="tips">我的留言</span>
+                </div>
+                <ul class="discuss_list" id="js_cmt_mylist"></ul>
+            </div>
+            <div class="rich_tips tips_global loading_tips" id="js_mycmt_loading">
+                <img src="./鄘风-定之方中_files/icon_loading_white2805ea.gif" class="rich_icon icon_loading_white" alt="">
+                <span class="tips">加载中</span>
+            </div>
+            <div class="wx_poptips" id="js_cmt_toast" style="display:none;">
+                <img alt="" class="icon_toast" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGoAAABqCAYAAABUIcSXAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3NpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDoyMTUxMzkxZS1jYWVhLTRmZTMtYTY2NS0xNTRkNDJiOGQyMWIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MTA3QzM2RTg3N0UwMTFFNEIzQURGMTQzNzQzMDAxQTUiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MTA3QzM2RTc3N0UwMTFFNEIzQURGMTQzNzQzMDAxQTUiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChNYWNpbnRvc2gpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NWMyOGVjZTMtNzllZS00ODlhLWIxZTYtYzNmM2RjNzg2YjI2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjIxNTEzOTFlLWNhZWEtNGZlMy1hNjY1LTE1NGQ0MmI4ZDIxYiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pmvxj1gAAAVrSURBVHja7J15rF1TFMbXk74q1ZKHGlMkJVIhIgg1FH+YEpEQJCKmGBpThRoSs5jVVNrSQUvEEENIhGiiNf9BiERICCFIRbUiDa2qvudbOetF3Tzv7XWGffa55/uS7593977n3vO7e5+199p7v56BgQGh0tcmvAUERREUQVEERREUQVEERREUQVEERREUQVEERREUQVEERREUQVEERVAUQVEERVAUQbVYk+HdvZVG8b5F0xj4RvhouB+eCy8KrdzDJc1RtAX8ILxvx98V1GyCSkN98Cx4z/95/Wn4fj6j6tUEeN4wkFSnw1MJqj5NhBfAuwaUHREUg4lqNMmePVsHll/HFhVfe1t3FwpJI8DXCCquDrCWNN4B6Tb4M3Z98aTPmTvh0YHl18PXw29yZiKejoPvcUD6E74yFBJbVDk6Bb7K8aP/Hb4c/tRzEYIqprPhSxzlf4Uvhb/0Xoig8qnHAJ3lqPMzfDH8XZ4LEpRf2sVdA5/sqPO9Qfop70UJyn+/boaPddT5yrq7VUUvTIVJI7q74MMddXR8NB1eXcYvhBpZm0s2w72/o86HFoKvLau/pYaXzjLMdUJ6y0LwtWV9CIIaXtvA8+G9HHV03u5q+K+yH47U0NoRngPv7KjzHDwTLj0bS1BDazfJJlcnOOostC6ysnCT+q80G/sIvFVgeW09D8FPVT0uoP7VfvAD8NjA8pqmuAN+OcYAjso0RbIZ8DGB5TVNcRO8JMaHY9SXSdfa3eeANJimWBLrA7JFiZwIXye+NMUV8CcxP2SRFjXefok7NRjSGZJlWUPvw2/wtNiQirSoXWyMsR28wR7AzzYM0oXw+Y7yK+CLJGeaoqjyrJSdZJD6Ov4+z5y6NJc0Az7NUecHydIUy+v60KNyQHoM3nKI1y7YCFiq0i7uBvgER52vDdKqWn9djhY1Dn4G3n6Ecqm2rF74dvgoR53S0hQxW9RJAZAGW5bSn58QJA27dQ7uIEedjywEX5NKVxCqsY6y+qA+LxFI4+yZ6oH0trWkNan80jygtIUsc5SflgAsDXgehfdx1KkkTRE76tN+Xue2jnTU0Ru1oIbvpt30bBtKhOp5yaaRkts0lic8V1i6dPcIRx2d/l8Y8XtNNEg7OOo8bl1kmmOKnDsO88CaYzejau0hWZqiL7C83oCH4SeTHvwV2BqqsHRVztSEYOmWF80NeXZT6Hd4KflResE9vCnBOlCyGfDNAstHTVPUDWoQ1t3iW+9WNizvlhfd4aerXd+ThqiMfNR6+9LvOOro5OY5JX2H4+F7HZD+kGzlamMgldWiirQsjcwWFbjmqZJteekJLK9pisvgL6RhKvuciZiwzrWWGapfrPy30kBVcSBIrw0aD3PU0XB6cehntq7rTMf7/2iQlktDVdXJLXlg6VjmiYBn6rWSTRCH6hvJ0hQrpcGq8oidsmHpTP8t8DGO9/vcWt9qabiqPgup1yKyQwvC2tSefZ73SSpNkUJ4PlLorlHZ+446nc8f3fIyywlJhwrTuwVSjBa1ccvSxN0hjjoK5xVrYZMd9V6XbFfgBukixTwGLg8sDam3dZR/wZ6L/dJlin1en8LS+bgpFbz3Ygvzu1J1HKxYNqxGpCmaCEo12rrBorD6LRp8UbpcdR5VWhTW35KlKd6QFqjuM2XzwlpnMxTvSkuUwuG/Xlg6NtPjbT6WFimF/VG6LEvXgn8QGDjMbBukVECFwhpoS+CQatfX2Q1q6H7wENHdrfCr0lKleEB9JyxNneus+VJpsVL9TwI6W65LovWIGl3KtVJaLv7LBwYTFEERFEVQFEERFEVQFEERFEVQFEERFEVQFEERFEVQFEERFFWq/hFgADUMN4RzT6/OAAAAAElFTkSuQmCC">
+                <p class="toast_content">已留言</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="js_article" class="rich_media preview_appmsg">
+        
+        <div id="js_top_ad_area" class="top_banner">
+ 
+        </div>
+                
+
+        <div class="rich_media_inner">
+                        <div class="rich_media_global_msg">
+                
+                此为临时链接，仅用于文章预览，将在短期内失效
+                <a id="js_close_temp" href="javascript:;" class="icon_closed">关闭</a>
+            </div>
+                        <div id="page-content">
+                <div id="img-content" class="rich_media_area_primary">
+                    <h2 class="rich_media_title" id="activity-name">
+                        鄘风-定之方中 
+                    </h2>
+                    <div class="rich_media_meta_list">
+                        						                        <em id="post-date" class="rich_media_meta rich_media_meta_text">2016-07-06</em>
+
+                                                <em class="rich_media_meta rich_media_meta_text">gmth</em>
+                                                <a class="rich_media_meta rich_media_meta_link rich_media_meta_nickname" href="javascript:void(0);" id="post-user">冠冕堂皇</a>
+                        <span class="rich_media_meta rich_media_meta_text rich_media_meta_nickname">冠冕堂皇</span>
+
+                        <div id="js_profile_qrcode" class="profile_container" style="display:none;">
+                            <div class="profile_inner">
+                                <strong class="profile_nickname">冠冕堂皇</strong>
+                                <img class="profile_avatar" id="js_profile_qrcode_img" src="" alt="">
+
+                                <p class="profile_meta">
+                                <label class="profile_meta_label">微信号</label>
+                                <span class="profile_meta_value"></span>
+                                </p>
+
+                                <p class="profile_meta">
+                                <label class="profile_meta_label">功能介绍</label>
+                                <span class="profile_meta_value">我的读经之路</span>
+                                </p>
+                                
+                            </div>
+                            <span class="profile_arrow_wrp" id="js_profile_arrow_wrp">
+                                <i class="profile_arrow arrow_out"></i>
+                                <i class="profile_arrow arrow_in"></i>
+                            </span>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    
+                                                            
+                                                            
+                    
+                    <div class="rich_media_content " id="js_content">
+                        
+
+                        
+                        <p><strong>定之方中，作于楚宫。揆之以日，作于楚室。树之榛栗，椅桐梓漆，爰伐琴瑟。</strong></p><p><strong>升彼虚矣，以望楚矣。望楚与堂，景山与京，降观于桑。卜云其吉，终<span style="line-height: 25.6px; white-space: pre-wrap;">然</span>允臧。</strong></p><p><strong>灵雨既零，命彼倌人。星言夙驾，说于桑田。匪直也人，秉心塞渊，騋牝三千。</strong><br></p><p><br></p><p>【<span style="line-height: 25.6px; white-space: pre-wrap;">定之方中</span>】：定，星名。方中，正中。定星每年在夏历十月中旬至十一月初的黄昏时位于正中方位，古人以之定向兴建房屋。所以定星有“营室”之称。</p><p>【<span style="line-height: 25.6px; white-space: pre-wrap;">作于楚宫</span>】：<span style="line-height: 25.6px; white-space: pre-wrap;">作于，作为，建造。古代“于”和“为”读音相通，古本都作“为”。<span style="line-height: 25.6px; white-space: pre-wrap;">楚宫，楚丘的公室。</span></span></p><p><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;">【<span style="line-height: 25.6px; white-space: pre-wrap;">揆（<span style="color: rgb(102, 0, 0); font-family: Arial; font-size: 20px; line-height: 28.8px;  background-color: rgb(255, 255, 255);">kuí</span>）之以日</span>】：<span style="line-height: 25.6px; white-space: pre-wrap;">揆，测量。以，按照。日，日影。</span></span></span></p><p><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;">【<span style="line-height: 25.6px; white-space: pre-wrap;">作于楚室</span>】：<span style="line-height: 25.6px; white-space: pre-wrap;">楚室同“楚宫”。以上四句大意为，根据定星和太阳影子来测量方位，准备在楚丘建造宫室。</span></span></span></span></p><p><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;">【<span style="line-height: 25.6px; white-space: pre-wrap;">树之榛（<span style="color: rgb(102, 0, 0); font-family: Arial; font-size: 20px; line-height: 28.8px;  background-color: rgb(255, 255, 255);">zhēn</span>）栗（<span style="color: rgb(102, 0, 0); font-family: Arial; font-size: 20px; line-height: 28.8px;  background-color: rgb(255, 255, 255);">lì</span>）</span>】：<span style="line-height: 25.6px; white-space: pre-wrap;">树，动词，栽树。<span style="line-height: 25.6px; white-space: pre-wrap;">榛、<span style="line-height: 25.6px; white-space: pre-wrap;">栗，以及下文中的<span style="line-height: 25.6px; white-space: pre-wrap;">椅、桐、梓（<span style="color: rgb(102, 0, 0); font-family: Arial; font-size: 20px; line-height: 28.8px;  background-color: rgb(255, 255, 255);">zǐ&nbsp;</span>）、漆，都是树名。<span style="line-height: 25.6px; white-space: pre-wrap;">榛和</span><span style="line-height: 25.6px; white-space: pre-wrap;">栗的果实可以用于祭祀，<span style="line-height: 25.6px; white-space: pre-wrap;">椅、桐、梓、漆是制造琴、瑟等乐器的必备材料。</span></span></span></span></span></span></span></span></span></span></p><p><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;">榛（学名：Corylus heterophylla&nbsp;Fisch.）：又名榛子，世界上四大干果（核桃、扁桃、榛子、腰果）之一。</span></span></span></span></span></span></span></span></p><p><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><img data-src="http://mmbiz.qpic.cn/mmbiz/L8ScfAa5XynVUicoMeIeXngfEsoc19bbB0M6hSF5tmEoIcWtSxNCLhrZGe7bCrkq0AEb68t4gK98sGrzu8PXyKA/0?wx_fmt=png" class="" data-type="png" data-ratio="0.6977611940298507" data-w="268" src="./鄘风-定之方中_files/640" style="width: auto !important; visibility: visible !important; height: auto !important;"><img data-src="http://mmbiz.qpic.cn/mmbiz/L8ScfAa5XynVUicoMeIeXngfEsoc19bbBeZl3WHHt0ZibJYAtszlfntKD6oHiaW1NROibUanPU9crMGEtmwXqlvViag/0?wx_fmt=jpeg" class="" data-type="jpeg" data-ratio="0.6909090909090909" data-w="220" src="./鄘风-定之方中_files/640(1)" style="width: auto !important; visibility: visible !important; height: auto !important;"></span></span></span></span></span></span></span></span></span></span></p><p><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="color: rgb(51, 51, 51); font-family: arial, 宋体, sans-serif; font-size: 14px; line-height: 24px; text-indent: 28px;  background-color: rgb(255, 255, 255);">栗（学名：</span><em style="color: rgb(51, 51, 51); font-family: arial, 宋体, sans-serif; font-size: 14px; line-height: 24px; text-indent: 28px; white-space: normal; background-color: rgb(255, 255, 255);">Castanea mollissima</em><span style="color: rgb(51, 51, 51); font-family: arial, 宋体, sans-serif; font-size: 14px; line-height: 24px; text-indent: 28px;  background-color: rgb(255, 255, 255);">&nbsp;Bl.），壳斗科栗属植物。</span></span></span></span></span></span></span></span></span></span></span></p><p><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><img data-src="http://mmbiz.qpic.cn/mmbiz/L8ScfAa5XynVUicoMeIeXngfEsoc19bbBWhnQ1qdrsrbHHakH0gSPZ1OcDRHmLnGZZmHVQDCfm5HacohAKSffnw/0?wx_fmt=jpeg" class="" data-type="jpeg" data-ratio="1.4962686567164178" data-w="268" src="./鄘风-定之方中_files/640(2)" style="width: auto !important; visibility: visible !important; height: auto !important;"><img data-src="http://mmbiz.qpic.cn/mmbiz/L8ScfAa5XynVUicoMeIeXngfEsoc19bbBn95KiaVUDeibwtHG8jRtMSDHaUv2rvjKoYt6YwWJkwSaibrNPXQC99GKw/0?wx_fmt=jpeg" class="" data-type="jpeg" data-ratio="0.7136363636363636" data-w="220" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkJDQzA1MTVGNkE2MjExRTRBRjEzODVCM0Q0NEVFMjFBIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkJDQzA1MTYwNkE2MjExRTRBRjEzODVCM0Q0NEVFMjFBIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QkNDMDUxNUQ2QTYyMTFFNEFGMTM4NUIzRDQ0RUUyMUEiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QkNDMDUxNUU2QTYyMTFFNEFGMTM4NUIzRDQ0RUUyMUEiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6p+a6fAAAAD0lEQVR42mJ89/Y1QIABAAWXAsgVS/hWAAAAAElFTkSuQmCC" style="width: 220px !important; visibility: visible !important; height: 157px !important;"><img data-src="http://mmbiz.qpic.cn/mmbiz/L8ScfAa5XynVUicoMeIeXngfEsoc19bbB2nFDicB2ucDibRPhd4S9PWbqBFp1nA8SKOvc41AzgSyhMh90ibDw59BYA/0?wx_fmt=jpeg" class="" data-type="jpeg" data-ratio="0.75" data-w="220" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkJDQzA1MTVGNkE2MjExRTRBRjEzODVCM0Q0NEVFMjFBIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkJDQzA1MTYwNkE2MjExRTRBRjEzODVCM0Q0NEVFMjFBIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QkNDMDUxNUQ2QTYyMTFFNEFGMTM4NUIzRDQ0RUUyMUEiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QkNDMDUxNUU2QTYyMTFFNEFGMTM4NUIzRDQ0RUUyMUEiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6p+a6fAAAAD0lEQVR42mJ89/Y1QIABAAWXAsgVS/hWAAAAAElFTkSuQmCC" style="width: 220px !important; visibility: visible !important; height: 165px !important;"><img data-src="http://mmbiz.qpic.cn/mmbiz/L8ScfAa5XynVUicoMeIeXngfEsoc19bbBCJyf34nx6icDCdUQDur9DOmlEISqtCXXcia6Fo6tmPduGj3ycKRrv9ww/0?wx_fmt=jpeg" class="" data-type="jpeg" data-ratio="0.75" data-w="220" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkJDQzA1MTVGNkE2MjExRTRBRjEzODVCM0Q0NEVFMjFBIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkJDQzA1MTYwNkE2MjExRTRBRjEzODVCM0Q0NEVFMjFBIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QkNDMDUxNUQ2QTYyMTFFNEFGMTM4NUIzRDQ0RUUyMUEiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QkNDMDUxNUU2QTYyMTFFNEFGMTM4NUIzRDQ0RUUyMUEiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6p+a6fAAAAD0lEQVR42mJ89/Y1QIABAAWXAsgVS/hWAAAAAElFTkSuQmCC" style="width: 220px !important; visibility: visible !important; height: 165px !important;"></span></span></span></span></span></span></span></span></span></span></p><p><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;">椅树</span></span></span></span></span></span></span></span></span></span></span><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;">，高10-15米；树干通直，树皮平滑、灰白色，树冠广展，外形美观；叶呈宽卵形、卵状三角形或卵状心形，长7至16厘米，宽5至14厘米；叶缘疏生锯齿，顶端锐尖短渐尖</span></span></span></span></span></span></span></span></span></span><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;">。该树种产于秦岭、淮河以南各省区，日本、朝鲜亦有分布。</span></span></span></span></span></span></span></span></span></p><p><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><img data-src="http://mmbiz.qpic.cn/mmbiz/L8ScfAa5XynVUicoMeIeXngfEsoc19bbB74O0HdctWUAESyR5QjtSfwdYTyGk1Uvw3HQibRBWm0XAUT7NxFoamjA/0?wx_fmt=jpeg" class="" data-type="jpeg" data-ratio="1.3320895522388059" data-w="268" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkJDQzA1MTVGNkE2MjExRTRBRjEzODVCM0Q0NEVFMjFBIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkJDQzA1MTYwNkE2MjExRTRBRjEzODVCM0Q0NEVFMjFBIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QkNDMDUxNUQ2QTYyMTFFNEFGMTM4NUIzRDQ0RUUyMUEiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QkNDMDUxNUU2QTYyMTFFNEFGMTM4NUIzRDQ0RUUyMUEiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6p+a6fAAAAD0lEQVR42mJ89/Y1QIABAAWXAsgVS/hWAAAAAElFTkSuQmCC" style="width: 268px !important; visibility: visible !important; height: 357px !important;"></span></span></span></span></span></span></span></span></span></span></p><p><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;">桐</span></span></span></span></span></span></span></span></span></span></span><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;">，学名悬铃木。</span></span></span></span></span></span></span></span></span></span><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;">落叶乔木</span></span></span></span></span></span></span></span></span></span><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;">，高可达35米；树冠广阔；树皮灰绿色，不规则片状剥落。叶片掌状，边缘有不规则尖齿和波状齿。球形花序通常2个一串，状如悬挂着的铃，故称悬铃木。早在清同治年间，上海已开始种植悬铃木。</span></span></span></span></span></span></span></span></span></span><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;">梧桐树</span></span></span></span></span></span></span></span></span></span><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;">干高大，枝叶茂盛，生长迅速，易成活，耐修剪，所以广泛植作行道绿化树种，拥有“行道 树之王”的美誉。 梧桐在</span></span></span></span></span></span></span></span></span></span><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;">植物分类学</span></span></span></span></span></span></span></span></span></span><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;">上属</span></span></span></span></span></span></span></span></span></span><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;">悬铃木科</span></span></span></span></span></span></span></span></span></span><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;">，科下仅有一属即</span></span></span></span></span></span></span></span></span></span><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;">悬铃木属</span></span></span></span></span></span></span></span></span></span><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;">，属下约7种，原产东南欧、印度及美洲。</span></span></span></span></span></span></span></span></span></span></p><p><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><img data-src="http://mmbiz.qpic.cn/mmbiz/L8ScfAa5XynVUicoMeIeXngfEsoc19bbBZ26ABsOLQic7JW3icGxehzIFgLwswmfO2JPKibSx6cFIHerz2DgzOKjgA/0?wx_fmt=jpeg" class="" data-type="jpeg" data-ratio="0.75" data-w="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkJDQzA1MTVGNkE2MjExRTRBRjEzODVCM0Q0NEVFMjFBIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkJDQzA1MTYwNkE2MjExRTRBRjEzODVCM0Q0NEVFMjFBIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QkNDMDUxNUQ2QTYyMTFFNEFGMTM4NUIzRDQ0RUUyMUEiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QkNDMDUxNUU2QTYyMTFFNEFGMTM4NUIzRDQ0RUUyMUEiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6p+a6fAAAAD0lEQVR42mJ89/Y1QIABAAWXAsgVS/hWAAAAAElFTkSuQmCC" style="width: 700px !important; visibility: visible !important; height: 525px !important;"></span></span></span></span></span></span></span></span></span></span></p><p><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"></span></span></span></span></span></span></span></span></span></span></p><p><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;">油桐是中国特有的经济林树种，也是四大木本油料树树种之一，有千年以上的栽培历史。</span></span></span></span></span></span></span></span></span></span></p><p><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;">世界上种植的油桐有六种，以原产我国的三年桐和五年桐最为普遍。油桐种子榨出来的油叫</span></span></span></span></span></span></span></span></span></span><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;">桐油</span></span></span></span></span></span></span></span></span></span><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;">，</span></span></span></span></span></span></span></span></span></span><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;">木油桐</span></span></span></span></span></span></span></span></span></span><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;">子榨出的油称木油，质量稍逊于桐油。桐油和木油色泽金黄或黄色，都是优良干性油，有光泽。桐油是很好的工业用油。它们具有不透水、不透气、不传电、抗酸碱、防腐蚀、耐冷热等特性，因此在工业上广泛用于制漆、塑料、电器、人造橡胶、人造皮革。油桐是我国传统的出口商品，占世界总产量的70%。</span></span></span></span></span></span></span></span></span></span></p><p><br></p><p><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;">梓树为</span></span></span></span></span></span></span></span></span><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;">紫葳科</span></span></span></span></span></span></span></span></span><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;">梓属乔木</span></span></span></span></span></span></span></span></span>植物，高达15<span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;">m。树冠倒卵形或椭圆形，树皮褐色或黄灰色。梓树树体端正，冠幅开展，叶大荫浓，春夏黄花满树，秋冬荚果悬挂，是具有一定观赏价值的树种。可作行道树、绿化树种。嫩叶可食；根皮或树皮、果实、木材、树叶均可入药剂；木材亦可作家具。</span></span></span></span></span></span></span></span></span></p><p><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><img data-src="http://mmbiz.qpic.cn/mmbiz/L8ScfAa5XynVUicoMeIeXngfEsoc19bbBtnKNoADsDNmLVfg6JPBgGoHqxC3vzIWptQTIjnibabbTL7pyd5xibHJA/0?wx_fmt=jpeg" class="" data-type="jpeg" data-ratio="0.75" data-w="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkJDQzA1MTVGNkE2MjExRTRBRjEzODVCM0Q0NEVFMjFBIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkJDQzA1MTYwNkE2MjExRTRBRjEzODVCM0Q0NEVFMjFBIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QkNDMDUxNUQ2QTYyMTFFNEFGMTM4NUIzRDQ0RUUyMUEiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QkNDMDUxNUU2QTYyMTFFNEFGMTM4NUIzRDQ0RUUyMUEiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6p+a6fAAAAD0lEQVR42mJ89/Y1QIABAAWXAsgVS/hWAAAAAElFTkSuQmCC" style="width: 700px !important; visibility: visible !important; height: 525px !important;"></span></span></span></span></span></span></span></span></span></span></span></p><p><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><img data-src="http://mmbiz.qpic.cn/mmbiz/L8ScfAa5XynVUicoMeIeXngfEsoc19bbBIReoluLRecsibaMGmEm7Zy91sxZ4ya4wUztkRoytsJvHmmbVMS3Gxxw/0?wx_fmt=jpeg" class="" data-type="jpeg" data-ratio="0.75" data-w="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkJDQzA1MTVGNkE2MjExRTRBRjEzODVCM0Q0NEVFMjFBIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkJDQzA1MTYwNkE2MjExRTRBRjEzODVCM0Q0NEVFMjFBIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QkNDMDUxNUQ2QTYyMTFFNEFGMTM4NUIzRDQ0RUUyMUEiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QkNDMDUxNUU2QTYyMTFFNEFGMTM4NUIzRDQ0RUUyMUEiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6p+a6fAAAAD0lEQVR42mJ89/Y1QIABAAWXAsgVS/hWAAAAAElFTkSuQmCC" style="width: 700px !important; visibility: visible !important; height: 525px !important;"></span></span></span></span></span></span></span></span></span></span></span></p><p><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><br></span></span></span></span></span></span></span></span></span></span></span></p><p><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;">漆漆是中国最古老的经济树种之一，籽可榨油，木材坚实，为天然涂料、油料和木材兼用树种。漆液是天然树脂涂料，素有“涂料之王”的美誉。</span></span></span></span></span></span></span></span></p><p><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><img data-src="http://mmbiz.qpic.cn/mmbiz/L8ScfAa5XynVUicoMeIeXngfEsoc19bbBjhicJafUhgztwUTDV1mNGb5Fgk3F08qKMazdQ4b5UnWNTnahA1HtpRA/0?wx_fmt=jpeg" class="" data-type="jpeg" data-ratio="0.9532374100719424" data-w="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkJDQzA1MTVGNkE2MjExRTRBRjEzODVCM0Q0NEVFMjFBIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkJDQzA1MTYwNkE2MjExRTRBRjEzODVCM0Q0NEVFMjFBIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QkNDMDUxNUQ2QTYyMTFFNEFGMTM4NUIzRDQ0RUUyMUEiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QkNDMDUxNUU2QTYyMTFFNEFGMTM4NUIzRDQ0RUUyMUEiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6p+a6fAAAAD0lEQVR42mJ89/Y1QIABAAWXAsgVS/hWAAAAAElFTkSuQmCC" style="width: 700px !important; visibility: visible !important; height: 667.266px !important;"></span></span></span></span></span></span></span></span></span></span></p><p><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;">【<span style="line-height: 25.6px; white-space: pre-wrap;">爰伐琴瑟</span>】：<span style="line-height: 25.6px; white-space: pre-wrap;">爰，焉，于是乎。承上句，是诗人的想象之词，意思是，将来这些树木长大了，可以砍伐来制作琴瑟等乐器。这里也包含了诗人祝颂的意思，卫国是被灭亡后重建的。树木长大成才，也是卫国日益强盛的象征。古人把大树看做国家历史悠久的一个重要标志。孟轲说“故国乔木”，也正是用的这个意思。</span></span></span></span></span></span></span></span></span></span></span></p><p><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><br></span></span></span></span></span></span></span></span></span></span></span></p><p><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;">【<span style="line-height: 25.6px; white-space: pre-wrap;">升彼虚矣</span>】：<span style="line-height: 25.6px; white-space: pre-wrap;">升，登。虚，地名，即曹虚，与楚丘相距不远。狄灭卫后，卫国的残部逃至曹。</span></span></span></span></span></span></span></span></span></span></span></span></p><p><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;">【<span style="line-height: 25.6px; white-space: pre-wrap;">以望楚矣</span>】：望，有观察的意思。楚，楚丘。这两句是说，登上曹虚，观察楚丘的地形。</span></span></span></span></span></span></span></span></span></span></span></span></p><p><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;">【<span style="line-height: 25.6px; white-space: pre-wrap;">望楚与堂，景山与京，降观于桑</span>】：上句的“望楚”是泛写，词句的“望楚”则是实地观察了。指测量<span style="line-height: 25.6px; white-space: pre-wrap;">楚、堂、景山、京，这些地方的地形，以确定营建的方位。<span style="line-height: 25.6px; white-space: pre-wrap;">堂，地名，在楚丘附近。景，大。景山，大山。</span><span style="line-height: 25.6px; white-space: pre-wrap;">京，高丘。</span></span></span></span></span></span></span></span></span></span></span></span></span></span></p><p><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;">【<span style="line-height: 25.6px; white-space: pre-wrap;">卜云其吉，终然允臧（<span style="color: rgb(102, 0, 0); font-family: Arial; font-size: 20px; line-height: 28.8px;  background-color: rgb(255, 255, 255);">zāng</span>）</span>】：<span style="line-height: 25.6px; white-space: pre-wrap;">卜，用龟甲占卜。古人迷信，没有重大行动，都要求决于占卜。吉，指龟甲显示出的兆象是吉祥的。<span style="line-height: 25.6px; white-space: pre-wrap;">终然，终于。允，信，确实。<span style="line-height: 25.6px; white-space: pre-wrap;">臧，善，好。以上是说考察了自然地性和土质，占卜又显出吉祥的兆象，终于确信迁居楚丘很好。</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p><p><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;">【<span style="line-height: 25.6px; white-space: pre-wrap;">灵雨既零，命彼倌（<span style="color: rgb(102, 0, 0); font-family: Arial; font-size: 20px; line-height: 28.8px;  background-color: rgb(255, 255, 255);">guān</span>）人</span>】：<span style="line-height: 25.6px; white-space: pre-wrap;">灵，善，好。灵雨，好雨。<span style="line-height: 25.6px; white-space: pre-wrap;">既，已经。零，落。<span style="line-height: 25.6px; white-space: pre-wrap;">倌人，主管国君外出车马的小官。</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p><p><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;">【<span style="line-height: 25.6px; white-space: pre-wrap;">星言夙驾，说（<span style="color: rgb(102, 0, 0); font-family: Arial; font-size: 20px; line-height: 28.8px;  background-color: rgb(255, 255, 255);">shuì</span>）于桑田</span>】：<span style="line-height: 25.6px; white-space: pre-wrap;">星，星夜，指夜晚。言，语气助词。<span style="line-height: 25.6px; white-space: pre-wrap;">夙，早上。说，劝说。上四句说卫文公不论晴雨早晚，经常在外奔波，关心农事。</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p><p><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;">【<span style="line-height: 25.6px; white-space: pre-wrap;">匪直也人，秉心塞渊，騋（<span style="color: rgb(102, 0, 0); font-family: Arial; font-size: 20px; line-height: 28.8px;  background-color: rgb(255, 255, 255);">lái</span>）牝（<span style="color: rgb(102, 0, 0); font-family: Arial; font-size: 20px; line-height: 28.8px;  background-color: rgb(255, 255, 255);">pìn</span>）三千</span>】：<span style="line-height: 25.6px; white-space: pre-wrap;">匪，非。直，只。人，常人，一般人。<span style="line-height: 25.6px; white-space: pre-wrap;">匪直也人，即不是普通的人。<span style="line-height: 25.6px; white-space: pre-wrap;">秉心，操心，持心。塞渊，填满深渊，形容人心胸开阔，能容人。<span style="line-height: 25.6px; white-space: pre-wrap;">騋，长大的马。<span style="line-height: 25.6px; white-space: pre-wrap;">牝，母马。三千，极言其多，表示富有。以上三句是说，卫文公不是一般的人，他虚火若谷，所以能使国家富足。</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p><p><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><br></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p><p><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;">这首诗写卫文公重建卫国。卫懿公九年（公元前660年），北方狄人入侵卫国，懿公败死，卫国灭亡。其残部在宋国的帮助下逃过黄河，在曹（河南滑县南）暂时落脚，立戴公，当年就死了。次年，卫文公即位，在齐桓公的扶持下，由曹迁到楚丘（河南滑县东）重建家园。</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p><p><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;">卫国之前的几个国君荒淫腐败，不堪狄人一击。 而卫文公却将一个残破的卫国逐步恢复了起来，使卫国人民暂时脱离战乱，得到安宁。</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p><p><br></p>
+                    </div>
+                    <script nonce="MOONSAFE_NONCE_1467802513" type="text/javascript">
+                        var first_sceen__time = (+new Date());
+
+                        if ("" == 1 && document.getElementById('js_content'))
+                            document.getElementById('js_content').addEventListener("selectstart",function(e){ e.preventDefault(); });
+
+                                        (function(){
+                            if (navigator.userAgent.indexOf("WindowsWechat") != -1){
+                                var link = document.createElement('link');
+                                var head = document.getElementsByTagName('head')[0];
+                                link.rel = 'stylesheet';
+                                link.type = 'text/css';
+                                link.href = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/page_mp_article_improve_winwx2c9cd6.css";
+                                head.appendChild(link);
+                            }
+                        })();
+                    </script>
+                    <link rel="stylesheet" type="text/css" href="./鄘风-定之方中_files/page_mp_article_improve_combo2eb52b.css">
+                    
+                    
+                                        
+                                        
+                                        <div class="rich_media_tool" id="js_toobar3">
+                                                                    <div id="js_read_area3" class="media_tool_meta tips_global meta_primary" style="display:none;">阅读 <span id="readNum3"></span></div>
+
+                        <span style="display:none;" class="media_tool_meta meta_primary tips_global meta_praise" id="like3">
+                            <i class="icon_praise_gray"></i><span class="praise_num" id="likeNum3"></span>
+                        </span>
+
+                        <a id="js_report_article3" style="display:none;" class="media_tool_meta tips_global meta_extra" href="javascript:void(0);">投诉</a>
+
+                    </div>
+
+
+
+                                    </div>
+
+                <div class="rich_media_area_primary sougou" id="sg_tj" style="display:none">
+
+                </div>
+
+                <div class="rich_media_area_extra">
+
+                    
+                                        <div class="mpda_bottom_container" id="js_bottom_ad_area">
+                        
+                    </div>
+                                        
+                    <div id="js_iframetest" style="display:none;"></div>
+                                        
+                                    </div>
+               
+            </div>
+            <div id="js_pc_qr_code" class="qr_code_pc_outer" style="display: block;">
+                <div class="qr_code_pc_inner">
+                    <div class="qr_code_pc">
+                        <img id="js_pc_qr_code_img" class="qr_code_pc_img" src="./鄘风-定之方中_files/qrcode">
+                        <p>微信扫一扫<br>关注该公众号</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+        
+        <script nonce="MOONSAFE_NONCE_1467802513">
+    var __DEBUGINFO = {
+        debug_js : "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/debug/console2ca724.js",
+        safe_js : "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/safe/moonsafe2ea69c.js",
+        res_list: []
+    };
+</script>
+        <script nonce="MOONSAFE_NONCE_1467802513">window.moon_map = {"appmsg/emotion/caret.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/caret278965.js","biz_wap/jsapi/cardticket.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/cardticket275627.js","appmsg/emotion/map.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/map278965.js","appmsg/emotion/textarea.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/textarea27cdc5.js","appmsg/emotion/nav.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/nav278965.js","appmsg/emotion/common.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/common278965.js","appmsg/emotion/slide.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/slide2a9cd9.js","pages/report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/report2e9114.js","pages/music_player.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/music_player2b674b.js","pages/loadscript.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/loadscript2c9cd6.js","appmsg/emotion/dom.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/dom278965.js","biz_wap/utils/hashrouter.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/hashrouter2805ea.js","a/gotoappdetail.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/gotoappdetail2ea0e6.js","a/ios.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/ios275627.js","a/android.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/android2c5484.js","a/profile.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/profile2ea0e6.js","a/mpshop.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/mpshop2ea0e6.js","a/card.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/card2ea0e6.js","biz_wap/utils/position.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/position29b1f8.js","appmsg/a_report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/a_report2e2d45.js","biz_common/utils/respTypes.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/respTypes2c57d0.js","appmsg/cmt_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cmt_tpl.html2a2c13.js","sougou/a_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/sougou/a_tpl.html2c6e7c.js","appmsg/emotion/emotion.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/emotion2a9cd9.js","biz_common/utils/report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/report275627.js","biz_common/utils/huatuo.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/huatuo293afc.js","biz_common/utils/cookie.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/cookie275627.js","pages/voice_component.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/voice_component2c5484.js","new_video/ctl.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/new_video/ctl2d441f.js","biz_common/utils/monitor.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/monitor2a30ee.js","biz_common/utils/spin.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/spin275627.js","biz_wap/jsapi/pay.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/pay275627.js","appmsg/reward_entry.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/reward_entry2e21d7.js","appmsg/comment.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/comment2ec548.js","appmsg/like.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/like2eb52b.js","appmsg/a.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/a2ea76c.js","pages/version4video.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/version4video2e481d.js","rt/appmsg/getappmsgext.rt.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/rt/appmsg/getappmsgext.rt2c21f6.js","biz_wap/utils/storage.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/storage2a74ac.js","biz_common/tmpl.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/tmpl2b3578.js","appmsg/img_copyright_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/img_copyright_tpl.html2a2c13.js","appmsg/a_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/a_tpl.html2d1390.js","biz_common/ui/imgonepx.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/ui/imgonepx275627.js","biz_common/dom/attr.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/dom/attr275627.js","biz_wap/utils/ajax.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/ajax2c7a90.js","biz_common/utils/string/html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/string/html29f4e9.js","sougou/index.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/sougou/index2c7543.js","biz_wap/safe/mutation_observer_report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/safe/mutation_observer_report2d5cb8.js","appmsg/report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/report2ecee3.js","appmsg/report_and_source.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/report_and_source2c0ff9.js","appmsg/page_pos.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/page_pos2ec4b2.js","appmsg/cdn_speed_report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cdn_speed_report2c57d0.js","appmsg/wxtopic.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/wxtopic2e4987.js","appmsg/voice.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/voice2ab8bd.js","appmsg/qqmusic.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/qqmusic2ab8bd.js","appmsg/iframe.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/iframe2e69b8.js","appmsg/review_image.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/review_image2d0cfe.js","appmsg/outer_link.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/outer_link275627.js","biz_wap/jsapi/core.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/core2c30c1.js","biz_common/dom/event.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/dom/event275627.js","appmsg/copyright_report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/copyright_report2ec4b2.js","appmsg/cache.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cache2a74ac.js","appmsg/pay_for_reading.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/pay_for_reading2c5484.js","appmsg/async.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/async2ec84f.js","biz_wap/ui/lazyload_img.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/ui/lazyload_img2ec99a.js","biz_common/log/jserr.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/log/jserr2805ea.js","appmsg/share.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/share2ec548.js","biz_wap/utils/mmversion.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/mmversion275627.js","appmsg/cdn_img_lib.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cdn_img_lib275627.js","biz_common/utils/url/parse.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/url/parse2dd7fd.js","biz_common/dom/class.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/dom/class275627.js","biz_wap/utils/device.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/device2b3aae.js","biz_wap/jsapi/a8key.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/a8key2a30ee.js","appmsg/index.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/index2ec99a.js"};</script><script nonce="MOONSAFE_NONCE_1467802513" type="text/javascript" src="./鄘风-定之方中_files/moon2ee9f1.js"></script>
+    <script id="topic_tpl" type="text/html">        
+        <span class="db topic_wrp">
+            <span class="topic_thumb" style="background-image:url({img_url});"></span>
+            <span class="topic_content">
+                <strong class="topic_title">{title}</strong>
+                <span class="topic_desc">{author}</span>
+                <span class="topic_info">
+                    <span class="topic_info_extra"><span class="icon_topic"></span>话题</span>
+                    <span class="topic_info_primary">相关文章{msg_num}篇</span>
+                </span>
+            </span>
+        </span>
+    </script>
+    <script id="voice_tpl" type="text/html">        
+        <span id="voice_main_<#=voiceid#>_<#=posIndex#>" class="db audio_area <#if(!musicSupport){#> unsupport<#}#>">
+            <span class="tc tips_global unsupport_tips" <#if(show_not_support!==true){#>style="display:none;"<#}#>>
+            当前浏览器不支持播放音乐或语音，请在微信或其他浏览器中播放            </span>
+            <span class="audio_wrp db">
+                <span id="voice_play_<#=voiceid#>_<#=posIndex#>" class="audio_play_area">
+                    <i class="icon_audio_default"></i>
+                    <i class="icon_audio_playing"></i>
+                    <img src="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/audio/icon_audio_unread26f1f1.png" alt="" class="pic_audio_default">
+                </span>
+                <span class="audio_length tips_global"><#=duration_str#></span>
+                <span class="db audio_info_area">
+                    <strong class="db audio_title"><#=title#></strong>
+                    <span class="audio_source tips_global"><#if(window.nickname){#>来自<#=window.nickname#><#}#></span>
+                </span>
+                <span id="voice_progress_<#=voiceid#>_<#=posIndex#>" class="progress_bar" style="width:0px;"></span>
+            </span>
+        </span>
+    </script>
+
+    <script id="qqmusic_tpl" type="text/html">        
+        <span id="qqmusic_main_<#=comment_id#>_<#=posIndex#>" class="db qqmusic_area <#if(!musicSupport){#> unsupport<#}#>">
+            <span class="tc tips_global unsupport_tips" <#if(show_not_support!==true){#>style="display:none;"<#}#>>
+            当前浏览器不支持播放音乐或语音，请在微信或其他浏览器中播放            </span>
+            <span class="db qqmusic_wrp">
+                <span class="db qqmusic_bd">
+                    <span id="qqmusic_play_<#=musicid#>_<#=posIndex#>" class="play_area">
+                        <i class="icon_qqmusic_switch"></i>
+                        <img src="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/qqmusic/icon_qqmusic_default.2x26f1f1.png" alt="" class="pic_qqmusic_default">
+                        <img src="<#=music_img#>" data-autourl="<#=audiourl#>" data-musicid="<#=musicid#>" class="qqmusic_thumb" alt="">
+                    </span>
+                                        <a id="qqmusic_home_<#=musicid#>_<#=posIndex#>" href="javascript:void(0);" class="access_area">
+                        <span class="qqmusic_songname"><#=music_name#></span>
+                        <span class="qqmusic_singername"><#=singer#></span>
+                        <span class="qqmusic_source"><img src="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/qqmusic/icon_qqmusic_source263724.png" alt=""></span>
+                    </a>
+                </span>
+            </span>       
+        </span>
+    </script>
+  <script nonce="MOONSAFE_NONCE_1467802513" type="text/javascript">
+      var not_in_mm_css = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/not_in_mm2c9cd6.css";
+      var windowwx_css = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/page_mp_article_improve_winwx2c9cd6.css";
+      var tid = "";
+      var aid = "";
+      var clientversion = "";
+      var appuin = "MzAwOTk4OTE1NA=="||"";
+
+      var source = "";
+      var scene = 75;
+      
+      var itemidx = "";
+
+      var _copyright_stat = "0";
+      var _ori_article_type = "";
+
+      var nickname = "冠冕堂皇";
+      var appmsg_type = "6";
+      var ct = "1467811576";
+      var publish_time = "2016-07-06" || "";
+      var user_name = "gh_dfdca217bbda";
+      var user_name_new = "";
+      var fakeid   = "";
+      var version   = "";
+      var is_limit_user   = "0";
+      var round_head_img = "http://mmbiz.qpic.cn/mmbiz/L8ScfAa5XykfSPzI8mjP72MibFLUvoo7ejWib4w7T66yK40212nQ2dJMf9fYocj724lbiaJoG2ybR66Bj53wvDL4A/0?wx_fmt=png";
+      var msg_title = "鄘风-定之方中";
+      var msg_desc = "6";
+      var msg_cdn_url = "http://mmbiz.qpic.cn/mmbiz/L8ScfAa5XykfSPzI8mjP72MibFLUvoo7eVeWAHRDojCp2UJ2ib2RDdMY0mQ8ZWkuVo0nibMhUu1XPPPgCrunAT4MA/0?wx_fmt=jpeg";
+      var msg_link = "http://mp.weixin.qq.com/s?__biz=MzAwOTk4OTE1NA==&amp;tempkey=1hA8IBum5K5TRTUKOwPCkeieQgGlTbxlWTgOeM45f42kBYpwLeeBA3kRNyoMnRD7pygOVPBTXPxu%2B%2FjNngBle03mmVQHhV0zVGTzAFw7gSDBBzKRLe%2FPKVU83MnIEM1Ov5hyC3EAirJ8Oaf9tBz8Bg%3D%3D&amp;#rd";
+      var user_uin = "0"*1;
+      var msg_source_url = '';
+      var img_format = 'jpeg';
+      var srcid = '';
+      var req_id = '0806N2QEbU1z4XjKspHnFklh';
+      var networkType;
+      var appmsgid = '' || '100000075'|| "100000075";
+      var comment_id = "0" * 1;
+      var comment_enabled = "" * 1;
+      var is_need_reward = "0" * 1;
+      var is_https_res = ("" * 1) && (location.protocol == "https:");
+
+      var devicetype = "";
+      var source_encode_biz = "";
+      // var source_username = "";
+      // var profile_ext_signature = "" || "";
+      var reprint_ticket = "";
+      var source_mid = "";
+      var source_idx = "";
+
+      var show_comment = "";
+      var __appmsgCgiData = {
+            can_use_page : "0"*1,
+            is_wxg_stuff_uin : "0"*1,
+            card_pos : "",
+            copyright_stat : "0",
+            source_biz : "",
+            hd_head_img : "http://wx.qlogo.cn/mmhead/Q3auHgzwzM5f1UviauUGGgPibaWv2KCGg2752lRKb3fHJKicvARAZlQibg/0"||(window.location.protocol+"//"+window.location.host + "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/pic/appmsg/pic_rumor_link.2x264e76.jpg")
+      };
+      var _empty_v = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/pic/pages/voice/empty26f1f1.mp3";
+
+      var copyright_stat = "0" * 1;
+
+      var pay_fee = "" * 1;
+      var pay_timestamp = "";
+      var need_pay = "" * 1;
+
+      var need_report_cost = "0" * 1;
+      var use_tx_video_player = "0" * 1;
+
+      var friend_read_source = "" || "";
+      var friend_read_version = "" || "";
+      var friend_read_class_id = "" || "";
+
+      var is_only_read = "1" * 1;
+      var read_num = "1" * 1;
+      var like_num = "0" * 1;
+      var liked = "false" == 'true' ? true : false;
+      var is_temp_url = "1hA8IBum5K5TRTUKOwPCkeieQgGlTbxlWTgOeM45f42kBYpwLeeBA3kRNyoMnRD7pygOVPBTXPxu&amp;nbsp;/jNngBle03mmVQHhV0zVGTzAFw7gSDBBzKRLe/PKVU83MnIEM1Ov5hyC3EAirJ8Oaf9tBz8Bg==" ? 1 : 0;
+      var send_time = "1467931751";
+
+      var topic_default_img = 'http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/topic/pic_book_thumb.2x2e4987.png';
+
+      // 话题卡片相关数据
+      var wxtopic = {
+        isbn : ""    // 书籍
+      };
+
+      var svr_time = "1467931751" * 1;
+      
+            window.wxtoken = "";
+          if(!!window.__initCatch){
+        window.__initCatch({
+            idkey : 27613,
+            startKey : 0,
+            limit : 128,
+            reportOpt : {
+                uin : uin,
+                biz : biz,
+                mid : mid,
+                idx : idx,
+                sn  : sn
+            },
+            extInfo : {
+                network_rate : 0.01    //网络错误采样率
+            }
+        });
+    }
+  </script>
+  <script nonce="MOONSAFE_NONCE_1467802513" type="text/javascript">
+    var real_show_page_time = +new Date();
+    if (!!window.addEventListener){
+        window.addEventListener("load", function(){
+            window.onload_endtime = +new Date();
+        });
+    }
+          seajs.use('appmsg/index.js');
+  </script>
+
+    
+
+<!--tailTrap<body></body><head></head><html></html>-->
+ 
+</body><style type="text/css" id="4427034520"></style></html>
