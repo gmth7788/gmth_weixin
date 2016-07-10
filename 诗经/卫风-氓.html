@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<!-- saved from url=(0219)http://mp.weixin.qq.com/s?__biz=MzAwOTk4OTE1NA==&tempkey=1hA8IBum5K5TRTUKOwPCkeieQgGlTbxlWTgOeM45f43yEmcK7uOFgJ6MGxQ6MvMaqEEXqTZukM3Lmq0%2BK8nLTPc45QojOhSeBIQgC96WLNVcznjUoVkNn8SkpWSIqegvGty7qMjuu4Y02ZI0sHjGEA%3D%3D&#rd -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+
+<script nonce="MOONSAFE_NONCE_1467805560" type="text/javascript">
+window.__nonce_str = "MOONSAFE_NONCE_1467805560"
+if (window.__nonce_str && location.href.indexOf("http://")==0) {
+	window.__moonsafe_csp_offset || (window.__moonsafe_csp_offset = 18);
+	document.write('<meta http-equiv="Content-Security-Policy" content="script-src \'unsafe-inline\' \'unsafe-eval\' *.qq.com *.weishi.com'+(window.__nonce_str ? ' \'nonce-' + window.__nonce_str + "\'":"")+ '">');
+        
+}
+</script><meta http-equiv="Content-Security-Policy" content="script-src &#39;unsafe-inline&#39; &#39;unsafe-eval&#39; *.qq.com *.weishi.com &#39;nonce-MOONSAFE_NONCE_1467805560&#39;">
+
+        <script nonce="MOONSAFE_NONCE_1467805560" type="text/javascript">
+            window.logs = {
+                pagetime: {}
+            };
+            window.logs.pagetime['html_begin'] = (+new Date());
+        </script>
+        
+<script nonce="MOONSAFE_NONCE_1467805560" type="text/javascript"> 
+
+    var page_begintime = (+new Date());
+
+    var biz = "MzAwOTk4OTE1NA=="||"";
+    var sn = "" || ""|| "9fc8506bbc03bdfea79f47b12ac1e152";
+    var mid = "100000080" || ""|| "100000080";
+    var idx = "1" || "" || "1";
+
+    //辟谣需求
+    var is_rumor = ""*1;
+    var norumor = ""*1;
+    if (!!is_rumor&&!norumor){
+      if (!document.referrer || document.referrer.indexOf("mp.weixin.qq.com/mp/rumor") == -1){
+        location.href = "http://mp.weixin.qq.com/mp/rumor?action=info&__biz=" + biz + "&mid=" + mid + "&idx=" + idx + "&sn=" + sn + "#wechat_redirect";
+      }
+    }
+
+    //原创需求，需要跳转到中间页
+    /*
+    var copyrightInfo = {
+        display_source : ""*1,
+        nocopyrightsource : ""*1
+    };
+    if (!!copyrightInfo.display_source&&!copyrightInfo.nocopyrightsource){
+      if (!document.referrer || document.referrer.indexOf("mp.weixin.qq.com/mp/reprint") == -1){
+        location.href = "http://mp.weixin.qq.com/mp/reprint?action=info&__biz=" + biz + "&mid=" + mid + "&idx=" + idx + "&sn=" + sn + "#wechat_redirect";
+      }
+    }*/
+</script>
+<script nonce="MOONSAFE_NONCE_1467805560" type="text/javascript">
+var MutationObserver = window.WebKitMutationObserver||window.MutationObserver||window.MozMutationObserver;
+var isDangerSrc = function(src) {
+    if(src) {
+        var host = src.match(/http(?:s)?:\/\/([^\/]+?)(\/|$)/);
+        if(host && !/qq\.com(\:8080)?$/.test(host[1]) && !/weishi\.com$/.test(host[1])) {
+            return true;
+        }
+    }
+    return false;
+}
+var ishttp = location.href.indexOf("http://")==0;
+if (ishttp && typeof MutationObserver === 'function' && location.host == 'mp.weixin.qq.com') {
+    window.__observer_data = {count:0, exec_time: 0, list:[]};
+    window.__observer = new MutationObserver(function(mutations) {
+        // 统计触发的次数
+        window.__observer_data.count++;
+        var begin = new Date(), deleteNodes = [];
+        mutations.forEach(function(mutation) {
+            var nodes = mutation.addedNodes;
+            for (var i = 0; i < nodes.length; i++) {
+                var node = nodes[i];
+
+                if (node.tagName === 'SCRIPT') {
+                    var scriptSrc = node.src;
+                    if(isDangerSrc(scriptSrc)) {
+                        window.__observer_data.list.push(scriptSrc);
+                        deleteNodes.push(node);
+                    }
+                
+                }
+            }
+        });
+        for(var i=0; i<deleteNodes.length; i++) {
+            var node = deleteNodes[i];
+            node.parentNode.removeChild(node);
+        }
+        window.__observer_data.exec_time += (new Date() - begin);
+    });
+    window.__observer.observe(document, {subtree: true, childList: true});
+}
+(function() {
+    if (Math.random()<0.01 && ishttp && HTMLScriptElement.prototype.__lookupSetter__ && typeof Object.defineProperty !== "undefined") {
+        window.__danger_src = {xmlhttprequest:[], script_src: [], script_setAttribute: []};
+        var t = "$"+Math.random();
+        // script.src
+        HTMLScriptElement.prototype.__old_method_script_src = HTMLScriptElement.prototype.__lookupSetter__ ('src');
+        HTMLScriptElement.prototype.__defineSetter__ ('src', function(url) {
+            if (url && isDangerSrc(url)) {
+                // console.log("src:"+url);
+                window.__danger_src.script_src.push(url);
+            }
+            this.__old_method_script_src(url);
+        });
+        var element_setAttribute_method = "element_setAttribute"+t;
+        Object.defineProperty(Element.prototype, element_setAttribute_method, {
+            value: Element.prototype.setAttribute,
+            enumerable: false
+        });
+        Element.prototype.setAttribute = function(name, url) {
+            if (this.tagName == 'SCRIPT' && name == 'src' && isDangerSrc(url)) {
+                // console.log("setAttr:"+url);
+                window.__danger_src.script_setAttribute.push(url);
+            }
+            this[element_setAttribute_method](name, url);
+        };
+    }
+})();
+</script>
+
+        <link rel="dns-prefetch" href="http://res.wx.qq.com/">
+<link rel="dns-prefetch" href="http://mmbiz.qpic.cn/">
+<link rel="shortcut icon" type="image/x-icon" href="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/common/favicon22c41b.ico">
+<script nonce="MOONSAFE_NONCE_1467805560" type="text/javascript">
+    String.prototype.html = function(encode) {
+        var replace =["&#39;", "'", "&quot;", '"', "&nbsp;", " ", "&gt;", ">", "&lt;", "<", "&amp;", "&", "&yen;", "¥"];
+        if (encode) {
+            replace.reverse();
+        }
+        for (var i=0,str=this;i< replace.length;i+= 2) {
+             str=str.replace(new RegExp(replace[i],'g'),replace[i+1]);
+        }
+        return str;
+    };
+
+    window.isInWeixinApp = function() {
+        return /MicroMessenger/.test(navigator.userAgent);
+    };
+
+    window.getQueryFromURL = function(url) {
+        url = url || 'http://qq.com/s?a=b#rd'; 
+        var query = url.split('?')[1].split('#')[0].split('&'),
+            params = {};
+        for (var i=0; i<query.length; i++) {
+            var arg = query[i].split('=');
+            params[arg[0]] = arg[1];
+        }
+        if (params['pass_ticket']) {
+        	params['pass_ticket'] = encodeURIComponent(params['pass_ticket'].html(false).html(false).replace(/\s/g,"+"));
+        }
+        return params;
+    };
+
+    (function() {
+	    var params = getQueryFromURL(location.href);
+        window.uin = params['uin'] || '';
+        window.key = params['key'] || '';
+        window.wxtoken = params['wxtoken'] || '';
+        window.pass_ticket = params['pass_ticket'] || '';
+    })();
+
+</script>
+
+        <title>卫风-氓</title>
+        
+<link rel="stylesheet" type="text/css" href="./卫风-氓_files/page_mp_article_improve2eb52b.css">
+<style>
+     
+    </style>
+<!--[if lt IE 9]>
+<link rel="stylesheet" type="text/css" href="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/page_mp_article_improve_pc2c9cd6.css">
+<![endif]-->
+<script nonce="MOONSAFE_NONCE_1467805560" type="text/javascript">
+    document.domain = "qq.com";
+</script>
+
+    <link rel="stylesheet" type="text/css" href="./卫风-氓_files/not_in_mm2c9cd6.css"></head>
+    <body id="activity-detail" class="zh_CN mm_appmsg not_in_mm" ontouchstart="">
+        
+    <script nonce="MOONSAFE_NONCE_1467805560" type="text/javascript">
+        var write_sceen_time = (+new Date());
+    </script>
+    
+    <div id="js_cmt_mine" class="discuss_container editing access" style="display:none;">
+        <div class="discuss_container_inner">
+            <h2 class="rich_media_title">卫风-氓</h2>
+            <span id="log"></span>
+            <div class="frm_textarea_box_wrp">
+                <span class="frm_textarea_box">
+                    <textarea id="js_cmt_input" class="frm_textarea" placeholder="留言将由公众号筛选后显示，对所有人可见。"></textarea>
+                    <div class="emotion_tool">
+                        <span class="emotion_switch" style="display:none;"></span>
+                        <span id="js_emotion_switch" class="pic_emotion_switch_wrp">
+                            <img class="pic_default" src="./卫风-氓_files/icon_emotion_switch.2x278965.png" alt="">
+                            <img class="pic_active" src="./卫风-氓_files/icon_emotion_switch_active.2x278965.png" alt="">
+                        </span>
+                        <div class="emotion_panel" id="js_emotion_panel">
+                            <span class="emotion_panel_arrow_wrp" id="js_emotion_panel_arrow_wrp">
+                                <i class="emotion_panel_arrow arrow_out"></i>
+                                <i class="emotion_panel_arrow arrow_in"></i>
+                            </span>
+                            <div class="emotion_list_wrp" id="js_slide_wrapper">
+                                
+                                
+                            </div>
+                            <ul class="emotion_navs" id="js_navbar">
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </span>
+            </div>
+            <div class="discuss_btn_wrp"><a id="js_cmt_submit" class="btn btn_primary btn_discuss btn_disabled" href="javascript:;">提交</a></div>
+            <div class="discuss_list_wrp" style="display:none">
+                <div class="rich_tips with_line title_tips discuss_title_line">
+                    <span class="tips">我的留言</span>
+                </div>
+                <ul class="discuss_list" id="js_cmt_mylist"></ul>
+            </div>
+            <div class="rich_tips tips_global loading_tips" id="js_mycmt_loading">
+                <img src="./卫风-氓_files/icon_loading_white2805ea.gif" class="rich_icon icon_loading_white" alt="">
+                <span class="tips">加载中</span>
+            </div>
+            <div class="wx_poptips" id="js_cmt_toast" style="display:none;">
+                <img alt="" class="icon_toast" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGoAAABqCAYAAABUIcSXAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3NpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDoyMTUxMzkxZS1jYWVhLTRmZTMtYTY2NS0xNTRkNDJiOGQyMWIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MTA3QzM2RTg3N0UwMTFFNEIzQURGMTQzNzQzMDAxQTUiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MTA3QzM2RTc3N0UwMTFFNEIzQURGMTQzNzQzMDAxQTUiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChNYWNpbnRvc2gpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NWMyOGVjZTMtNzllZS00ODlhLWIxZTYtYzNmM2RjNzg2YjI2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjIxNTEzOTFlLWNhZWEtNGZlMy1hNjY1LTE1NGQ0MmI4ZDIxYiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pmvxj1gAAAVrSURBVHja7J15rF1TFMbXk74q1ZKHGlMkJVIhIgg1FH+YEpEQJCKmGBpThRoSs5jVVNrSQUvEEENIhGiiNf9BiERICCFIRbUiDa2qvudbOetF3Tzv7XWGffa55/uS7593977n3vO7e5+199p7v56BgQGh0tcmvAUERREUQVEERREUQVEERREUQVEERREUQVEERREUQVEERREUQVEERVAUQVEERVAUQbVYk+HdvZVG8b5F0xj4RvhouB+eCy8KrdzDJc1RtAX8ILxvx98V1GyCSkN98Cx4z/95/Wn4fj6j6tUEeN4wkFSnw1MJqj5NhBfAuwaUHREUg4lqNMmePVsHll/HFhVfe1t3FwpJI8DXCCquDrCWNN4B6Tb4M3Z98aTPmTvh0YHl18PXw29yZiKejoPvcUD6E74yFBJbVDk6Bb7K8aP/Hb4c/tRzEYIqprPhSxzlf4Uvhb/0Xoig8qnHAJ3lqPMzfDH8XZ4LEpRf2sVdA5/sqPO9Qfop70UJyn+/boaPddT5yrq7VUUvTIVJI7q74MMddXR8NB1eXcYvhBpZm0s2w72/o86HFoKvLau/pYaXzjLMdUJ6y0LwtWV9CIIaXtvA8+G9HHV03u5q+K+yH47U0NoRngPv7KjzHDwTLj0bS1BDazfJJlcnOOostC6ysnCT+q80G/sIvFVgeW09D8FPVT0uoP7VfvAD8NjA8pqmuAN+OcYAjso0RbIZ8DGB5TVNcRO8JMaHY9SXSdfa3eeANJimWBLrA7JFiZwIXye+NMUV8CcxP2SRFjXefok7NRjSGZJlWUPvw2/wtNiQirSoXWyMsR28wR7AzzYM0oXw+Y7yK+CLJGeaoqjyrJSdZJD6Ov4+z5y6NJc0Az7NUecHydIUy+v60KNyQHoM3nKI1y7YCFiq0i7uBvgER52vDdKqWn9djhY1Dn4G3n6Ecqm2rF74dvgoR53S0hQxW9RJAZAGW5bSn58QJA27dQ7uIEedjywEX5NKVxCqsY6y+qA+LxFI4+yZ6oH0trWkNan80jygtIUsc5SflgAsDXgehfdx1KkkTRE76tN+Xue2jnTU0Ru1oIbvpt30bBtKhOp5yaaRkts0lic8V1i6dPcIRx2d/l8Y8XtNNEg7OOo8bl1kmmOKnDsO88CaYzejau0hWZqiL7C83oCH4SeTHvwV2BqqsHRVztSEYOmWF80NeXZT6Hd4KflResE9vCnBOlCyGfDNAstHTVPUDWoQ1t3iW+9WNizvlhfd4aerXd+ThqiMfNR6+9LvOOro5OY5JX2H4+F7HZD+kGzlamMgldWiirQsjcwWFbjmqZJteekJLK9pisvgL6RhKvuciZiwzrWWGapfrPy30kBVcSBIrw0aD3PU0XB6cehntq7rTMf7/2iQlktDVdXJLXlg6VjmiYBn6rWSTRCH6hvJ0hQrpcGq8oidsmHpTP8t8DGO9/vcWt9qabiqPgup1yKyQwvC2tSefZ73SSpNkUJ4PlLorlHZ+446nc8f3fIyywlJhwrTuwVSjBa1ccvSxN0hjjoK5xVrYZMd9V6XbFfgBukixTwGLg8sDam3dZR/wZ6L/dJlin1en8LS+bgpFbz3Ygvzu1J1HKxYNqxGpCmaCEo12rrBorD6LRp8UbpcdR5VWhTW35KlKd6QFqjuM2XzwlpnMxTvSkuUwuG/Xlg6NtPjbT6WFimF/VG6LEvXgn8QGDjMbBukVECFwhpoS+CQatfX2Q1q6H7wENHdrfCr0lKleEB9JyxNneus+VJpsVL9TwI6W65LovWIGl3KtVJaLv7LBwYTFEERFEVQFEERFEVQFEERFEVQFEERFEVQFEERFEVQFEERFFWq/hFgADUMN4RzT6/OAAAAAElFTkSuQmCC">
+                <p class="toast_content">已留言</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="js_article" class="rich_media preview_appmsg">
+        
+        <div id="js_top_ad_area" class="top_banner">
+ 
+        </div>
+                
+
+        <div class="rich_media_inner">
+                        <div class="rich_media_global_msg">
+                
+                此为临时链接，仅用于文章预览，将在短期内失效
+                <a id="js_close_temp" href="javascript:;" class="icon_closed">关闭</a>
+            </div>
+                        <div id="page-content">
+                <div id="img-content" class="rich_media_area_primary">
+                    <h2 class="rich_media_title" id="activity-name">
+                        卫风-氓 
+                    </h2>
+                    <div class="rich_media_meta_list">
+                        						                        <em id="post-date" class="rich_media_meta rich_media_meta_text">2016-07-10</em>
+
+                                                <em class="rich_media_meta rich_media_meta_text">gmth</em>
+                                                <a class="rich_media_meta rich_media_meta_link rich_media_meta_nickname" href="javascript:void(0);" id="post-user">冠冕堂皇</a>
+                        <span class="rich_media_meta rich_media_meta_text rich_media_meta_nickname">冠冕堂皇</span>
+
+                        <div id="js_profile_qrcode" class="profile_container" style="display:none;">
+                            <div class="profile_inner">
+                                <strong class="profile_nickname">冠冕堂皇</strong>
+                                <img class="profile_avatar" id="js_profile_qrcode_img" src="" alt="">
+
+                                <p class="profile_meta">
+                                <label class="profile_meta_label">微信号</label>
+                                <span class="profile_meta_value"></span>
+                                </p>
+
+                                <p class="profile_meta">
+                                <label class="profile_meta_label">功能介绍</label>
+                                <span class="profile_meta_value">我的读经之路</span>
+                                </p>
+                                
+                            </div>
+                            <span class="profile_arrow_wrp" id="js_profile_arrow_wrp">
+                                <i class="profile_arrow arrow_out"></i>
+                                <i class="profile_arrow arrow_in"></i>
+                            </span>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    
+                                                            
+                                                            
+                    
+                    <div class="rich_media_content " id="js_content">
+                        
+
+                        
+                        <p>氓之蚩<span style="line-height: 25.6px; white-space: pre-wrap;">蚩</span>，抱布贸丝。匪来贸丝，来即我谋。送子涉淇，至于顿丘。匪我愆期，子无良媒。将子无怒，秋以为期。</p><p>乘彼垝垣，以望复关。不见复关，泣涕涟涟；既见复关，载笑载言。尔卜尔筮，体无咎言。以尔车来，以我贿迁。</p><p>桑之未落，其叶沃若。于嗟鸠兮，无食桑葚！于嗟女兮，无与士耽！士之耽兮，犹可说也；女之耽兮，不可说也。</p><p>桑之落矣，其黄而陨。自我徂尔，三岁食贫。淇水汤汤，渐车帷裳。女也不爽，士贰其行。士也罔极，二三其德。</p><p>三岁为妇，靡室劳矣；夙兴夜寐，靡有朝矣！言既遂矣，至于暴矣；兄弟不知，咥其笑矣！静言思之，躬自悼矣。</p><p>”及尔偕老“，老使我怨。淇则有岸，隰则有泮。总角之宴，言笑晏晏，信誓旦旦，不思其反。反是不思，亦已焉哉！<br></p><p><br></p><p>【<span style="line-height: 25.6px; white-space: pre-wrap;">氓（<span style="color: rgb(102, 0, 0); font-family: Arial; font-size: 20px; line-height: 28.8px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">méng</span>）之蚩（<span style="color: rgb(102, 0, 0); font-family: Arial; font-size: 20px; line-height: 24px;  background-color: rgb(255, 255, 255);">chī</span>）<span style="line-height: 25.6px; white-space: pre-wrap;">蚩<span style="line-height: 25.6px; white-space: pre-wrap;">，抱布贸丝</span></span></span>】：<span style="line-height: 25.6px; white-space: pre-wrap;">氓,，<span style="font-family: 宋体; line-height: 28.8px;  background-color: rgb(255, 255, 255);">古代称民，诗中女主人公称呼她的丈夫。<span style="line-height: 25.6px; white-space: pre-wrap;">蚩</span><span style="line-height: 25.6px; white-space: pre-wrap;">蚩，笑嘻嘻。<span style="line-height: 25.6px; white-space: pre-wrap;">布，交换用的实物，即布匹；或是当时使用的货币。贸，交换，买。</span></span></span></span></p><p>【<span style="line-height: 25.6px; white-space: pre-wrap;">匪来贸丝，来即我谋</span>】：<span style="line-height: 25.6px;">匪</span><span style="line-height: 1.6;">同”非“，不是。<span style="line-height: 25.6px; white-space: pre-wrap;">即，就。谋，指商量婚事。</span></span></p><p>【<span style="line-height: 25.6px; white-space: pre-wrap;">送子涉淇，至于顿丘</span>】：<span style="line-height: 25.6px; white-space: pre-wrap;">子，你。涉，渡。</span></p><p>【<span style="line-height: 25.6px; white-space: pre-wrap;">匪我愆（<span style="color: rgb(102, 0, 0); font-family: Arial; font-size: 20px; line-height: 28.8px;  background-color: rgb(255, 255, 255);">qiān</span>）期，子无良媒</span>】：<span style="line-height: 25.6px; white-space: pre-wrap;">愆，过。<span style="line-height: 25.6px; white-space: pre-wrap;">愆期，过期。</span></span></p><p><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;">【<span style="line-height: 25.6px; white-space: pre-wrap;">将（<span style="color: rgb(102, 0, 0); font-family: Arial; font-size: 20px; line-height: 28.8px;  background-color: rgb(255, 255, 255);"><span style="color: rgb(102, 0, 0); font-family: Arial; font-size: 20px; line-height: 28.8px;  background-color: rgb(255, 255, 255);">qiāng</span></span>）子无怒，秋以为期</span>】：<span style="line-height: 25.6px; white-space: pre-wrap;">将</span>，愿，请。</span></span></p><p>【<span style="line-height: 25.6px; white-space: pre-wrap;">乘彼垝（<span style="color: rgb(102, 0, 0); font-family: Arial; font-size: 20px; line-height: 24px;  background-color: rgb(255, 255, 255);">guǐ</span>）垣（<span style="color: rgb(102, 0, 0); font-family: Arial; font-size: 20px; line-height: 24px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">yuán</span>），以望复关</span>】：<span style="line-height: 25.6px; white-space: pre-wrap;">乘，登。<span style="line-height: 25.6px; white-space: pre-wrap;">垝，毁坏。</span><span style="line-height: 25.6px; white-space: pre-wrap;">垣，墙。</span><span style="line-height: 25.6px; white-space: pre-wrap;">垝<span style="line-height: 25.6px; white-space: pre-wrap;">垣，已坏的墙。<span style="line-height: 25.6px; white-space: pre-wrap;">复关，地名，男子住的地方。<span style="line-height: 25.6px; white-space: pre-wrap;">望复关，实际上是望情人。</span></span></span></span></span></p><p><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;">【<span style="line-height: 25.6px; white-space: pre-wrap;">泣（<span style="color: rgb(102, 0, 0); font-family: Arial; font-size: 20px; line-height: 24px;  background-color: rgb(255, 255, 255);">qì</span>）涕（<span style="color: rgb(102, 0, 0); font-family: Arial; font-size: 20px; line-height: 24px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">tì</span>）涟涟</span>】：<span style="line-height: 25.6px; white-space: pre-wrap;">涕，泪。<span style="line-height: 25.6px; white-space: pre-wrap;">涟涟，泪下流的样子。</span></span></span></span></span></p><p><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;">【<span style="line-height: 25.6px; white-space: pre-wrap;">载笑载言</span>】：又说又笑。</span></span></span></span></span></p><p><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;">【<span style="line-height: 25.6px; white-space: pre-wrap;">尔卜尔筮（<span style="color: rgb(102, 0, 0); font-family: Arial; font-size: 20px; line-height: 28.8px;  background-color: rgb(255, 255, 255);">shì</span>），体无咎（<span style="color: rgb(102, 0, 0); font-family: Arial; font-size: 20px; line-height: 28.8px;  background-color: rgb(255, 255, 255);">jiù</span>）言</span>】：<span style="line-height: 25.6px; white-space: pre-wrap;">尔，你。<span style="line-height: 25.6px; white-space: pre-wrap;">卜、筮，以占卜断凶吉。</span><span style="line-height: 25.6px; white-space: pre-wrap;">卜，用龟甲占卦。筮，用蓍（<span style="color: rgb(102, 0, 0); font-family: Arial; font-size: 20px; line-height: 28.8px;  background-color: rgb(255, 255, 255);">shī</span>）草占卦。体，<span style="line-height: 25.6px; white-space: pre-wrap;">卦体，即占卜时龟甲或蓍草所显示出的兆象。<span style="line-height: 25.6px; white-space: pre-wrap;">咎</span><span style="line-height: 25.6px; white-space: pre-wrap;">言，凶辞，不吉利的话。</span></span></span></span></span></span></span></span></span></p><p><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;">【<span style="line-height: 25.6px; white-space: pre-wrap;">以尔车来，以我贿迁</span>】：<span style="line-height: 25.6px; white-space: pre-wrap;">贿，财物，指嫁妆。</span></span></span></span></span></span></span></span></span></span></p><p><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;">【<span style="line-height: 25.6px; white-space: pre-wrap;">桑之未落，其叶沃若</span>】：<span style="line-height: 25.6px; white-space: pre-wrap;">沃若，<span style="line-height: 25.6px; white-space: pre-wrap;">沃然，润泽的样子。连上句是茂盛润泽的桑叶，比喻自己年轻貌美。</span></span></span></span></span></span></span></span></span></span></span></span></p><p><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;">【<span style="line-height: 25.6px; white-space: pre-wrap;">于（</span></span></span></span></span></span></span></span></span></span></span></span></span><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="white-space: pre-wrap; color: rgb(102, 0, 0); font-family: Arial; font-size: 20px; line-height: 28.8px; background-color: rgb(255, 255, 255);">xū</span></span></span></span></span></span><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;">）嗟（</span></span></span></span></span></span></span></span></span></span></span></span></span><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="white-space: pre-wrap; color: rgb(102, 0, 0); font-family: Arial; font-size: 20px; line-height: 28.8px; background-color: rgb(255, 255, 255);">jiē</span></span></span></span></span><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;">）鸠兮，无食桑葚（<span style="color: rgb(102, 0, 0); font-family: Arial; font-size: 20px; line-height: 28.8px;  background-color: rgb(255, 255, 255);">shèn</span>）</span>】：<span style="line-height: 25.6px; white-space: pre-wrap;">于嗟，感叹词。鸠，斑鸠。古人说，鸠“食桑葚过，则醉而伤其性”，这里比喻女子不要沉醉于爱情之中。</span></span></span></span></span></span></span></span></span></span></span></span></span></p><p><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;">【<span style="line-height: 25.6px; white-space: pre-wrap;">于嗟女兮，无与士耽（<span style="color: rgb(102, 0, 0); font-family: Arial; font-size: 20px; line-height: 28.8px;  background-color: rgb(255, 255, 255);">dān</span>）</span>】：<span style="line-height: 25.6px; white-space: pre-wrap;">士，指男子。耽，本义是好喝酒，引申为“沉醉”，“迷恋”。</span></span></span></span></span></span></span></span></span></span></span></span></span></span></p><p><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;">【<span style="line-height: 25.6px; white-space: pre-wrap;">士之耽兮，犹可说<span style="line-height: 25.6px; white-space: pre-wrap;">（</span><span style="white-space: pre-wrap; color: rgb(102, 0, 0); font-family: Arial; font-size: 20px; line-height: 28.8px; background-color: rgb(255, 255, 255);">tuō</span><span style="line-height: 25.6px; white-space: pre-wrap;"></span><span style="line-height: 25.6px; white-space: pre-wrap;">）</span>也；女之耽兮，不可说也</span>】：<span style="line-height: 25.6px; white-space: pre-wrap;">犹，还。<span style="line-height: 25.6px; white-space: pre-wrap;">说，读作“脱”，摆脱，丢开。不可说，指对丈夫一往情深，无法丢开。</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p><p><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;">【<span style="line-height: 25.6px; white-space: pre-wrap;">桑之落矣，其黄而陨（<span style="color: rgb(102, 0, 0); font-family: Arial; font-size: 20px; line-height: 28.8px;  background-color: rgb(255, 255, 255);">yǔn</span>）</span>】：<span style="line-height: 25.6px; white-space: pre-wrap;">黄，桑叶黄。<span style="line-height: 25.6px; white-space: pre-wrap;">陨，落下。用桑叶黄落地比喻女子色衰。</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p><p><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;">【<span style="line-height: 25.6px; white-space: pre-wrap;">自我徂（<span style="color: rgb(102, 0, 0); font-family: Arial; font-size: 20px; line-height: 28.8px;  background-color: rgb(255, 255, 255);">cú</span>）尔，三岁食贫</span>】：<span style="line-height: 25.6px; white-space: pre-wrap;">徂，往。三岁，多年。<span style="line-height: 25.6px; white-space: pre-wrap;">食贫，食物缺乏。即过着穷苦的额日子。大意是，自从嫁给你，一直过着贫困的生活。</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p><p><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;">【<span style="line-height: 25.6px; white-space: pre-wrap;">淇水汤（<span style="color: rgb(102, 0, 0); font-family: Arial; font-size: 20px; line-height: 28.8px;  background-color: rgb(255, 255, 255);">shāng</span>）汤，渐车帷裳</span>】：<span style="line-height: 25.6px; white-space: pre-wrap;">汤</span><span style="line-height: 25.6px; white-space: pre-wrap;">汤，水势浩大的样子。<span style="line-height: 25.6px; white-space: pre-wrap;">渐，浸湿。帷裳，车上的幔布。此句是被遗弃回娘家经过<span style="line-height: 25.6px; white-space: pre-wrap;">淇水时的场景。</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p><p><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;">【<span style="line-height: 25.6px; white-space: pre-wrap;">女也不爽，士贰其行</span>】：<span style="line-height: 25.6px; white-space: pre-wrap;">爽，差错，果实。<span style="line-height: 25.6px; white-space: pre-wrap;">贰，不专一。大意是，女的没有过错，而男子的行为已经改变。</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p><p><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;">【<span style="line-height: 25.6px; white-space: pre-wrap;">士也罔（<span style="color: rgb(102, 0, 0); font-family: Arial; font-size: 20px; line-height: 28.8px;  background-color: rgb(255, 255, 255);">wǎng</span>）极，二三其德</span>】：<span style="line-height: 25.6px; white-space: pre-wrap;">罔，无。<span style="line-height: 25.6px; white-space: pre-wrap;">极，止，定。<span style="line-height: 25.6px; white-space: pre-wrap;">二三其德，指男子行为多变。</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p><p><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;">【<span style="line-height: 25.6px; white-space: pre-wrap;">三岁为妇，靡室劳矣；夙兴夜寐，靡有朝矣</span>】：<span style="line-height: 25.6px; white-space: pre-wrap;">靡室劳矣，不以家务事为劳苦，即自己能吃苦耐劳。<span style="line-height: 25.6px; white-space: pre-wrap;">靡，不。<span style="line-height: 25.6px; white-space: pre-wrap;">夙兴夜寐，早起晚睡。<span style="line-height: 25.6px; white-space: pre-wrap;">靡有朝矣，不止某一天如此。大意是，自己婚后辛勤劳苦。</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p><p><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;">【<span style="line-height: 25.6px; white-space: pre-wrap;">言既遂矣，至于暴矣</span>】：<span style="line-height: 25.6px; white-space: pre-wrap;">既，已经。<span style="line-height: 25.6px; white-space: pre-wrap;">遂，顺心，满足。<span style="line-height: 25.6px; white-space: pre-wrap;">暴，粗暴。</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p><p><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;">【<span style="line-height: 25.6px; white-space: pre-wrap;">兄弟不知，咥（<span style="color: rgb(102, 0, 0); font-family: Arial; font-size: 20px; line-height: 28.8px;  background-color: rgb(255, 255, 255);">xì</span>）其笑矣</span>】：<span style="line-height: 25.6px; white-space: pre-wrap;">咥，笑的样子。</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p><p><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;">【<span style="line-height: 25.6px; white-space: pre-wrap;">躬自悼矣</span>】：<span style="line-height: 25.6px; white-space: pre-wrap;">躬，自身。悼，伤心。大意是，自己受到丈夫的虐待，无处诉苦，独自想想，非常伤心。</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p><p><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;">【<span style="line-height: 25.6px; white-space: pre-wrap;">及尔偕老，老使我怨</span>】：<span style="line-height: 25.6px; white-space: pre-wrap;">及尔，与你。<span style="line-height: 25.6px; white-space: pre-wrap;">偕老，同到老。这是引丈夫以前的盟誓。大意是，想起你早先说的“与你相爱到老”的话，更使我怨恨。</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p><p><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;">【<span style="line-height: 25.6px; white-space: pre-wrap;">淇则有岸，隰（<span style="color: rgb(102, 0, 0); font-family: Arial; font-size: 20px; line-height: 28.8px;  background-color: rgb(255, 255, 255);">xí</span>）则有泮（<span style="color: rgb(102, 0, 0); font-family: Arial; font-size: 20px; line-height: 28.8px;  background-color: rgb(255, 255, 255);">pàn</span>）</span>】：<span style="line-height: 25.6px; white-space: pre-wrap;">隰，低湿的地方。<span style="line-height: 25.6px; white-space: pre-wrap;">泮，水边。大意说，河流有岸反衬那个男子的心无法捉摸。</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p><p><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;">【<span style="line-height: 25.6px; white-space: pre-wrap;">总角之宴，言笑晏晏，信誓旦旦，不思其反</span>】：<span style="line-height: 25.6px; white-space: pre-wrap;">总角，未成年的男子。<span style="line-height: 25.6px; white-space: pre-wrap;">宴，欢乐。<span style="line-height: 25.6px; white-space: pre-wrap;">晏晏，温和，融洽。<span style="line-height: 25.6px; white-space: pre-wrap;">信誓，诚实的誓言。旦旦，明白的样子。<span style="line-height: 25.6px; white-space: pre-wrap;">反，违反，变心。大意是，当年两小无猜的欢乐，婚后诚恳的誓言，都还记得一清二楚，想不到他现在却变了心。</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p><p><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;">【<span style="line-height: 25.6px; white-space: pre-wrap;">反是不思，亦已焉哉</span>】：<span style="line-height: 25.6px; white-space: pre-wrap;">是，指示代词，指前面说的誓言。<span style="line-height: 25.6px; white-space: pre-wrap;">已，止，算了。<span style="line-height: 25.6px; white-space: pre-wrap;">焉哉，语气助词，连用是加重决断的语气。大意是，他既然违反了誓言，就不要再想了，从此算了吧。</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p><p><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><br></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p><p><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;">这是一个被遗弃女子的自述。她叙述了自己从恋爱、结婚到被遗弃的过程，对负心丈夫充满了怨恨，最后她从痛苦中醒悟过来，表示要坚决同他一刀两断。</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p><p><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><span style="line-height: 25.6px; white-space: pre-wrap;"><br></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p>
+                    </div>
+                    <script nonce="MOONSAFE_NONCE_1467805560" type="text/javascript">
+                        var first_sceen__time = (+new Date());
+
+                        if ("" == 1 && document.getElementById('js_content'))
+                            document.getElementById('js_content').addEventListener("selectstart",function(e){ e.preventDefault(); });
+
+                                        (function(){
+                            if (navigator.userAgent.indexOf("WindowsWechat") != -1){
+                                var link = document.createElement('link');
+                                var head = document.getElementsByTagName('head')[0];
+                                link.rel = 'stylesheet';
+                                link.type = 'text/css';
+                                link.href = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/page_mp_article_improve_winwx2c9cd6.css";
+                                head.appendChild(link);
+                            }
+                        })();
+                    </script>
+                    <link rel="stylesheet" type="text/css" href="./卫风-氓_files/page_mp_article_improve_combo2eb52b.css">
+                    
+                    
+                                        
+                                        
+                                        <div class="rich_media_tool" id="js_toobar3">
+                                                                    <div id="js_read_area3" class="media_tool_meta tips_global meta_primary" style="display:none;">阅读 <span id="readNum3"></span></div>
+
+                        <span style="display:none;" class="media_tool_meta meta_primary tips_global meta_praise" id="like3">
+                            <i class="icon_praise_gray"></i><span class="praise_num" id="likeNum3"></span>
+                        </span>
+
+                        <a id="js_report_article3" style="display:none;" class="media_tool_meta tips_global meta_extra" href="javascript:void(0);">投诉</a>
+
+                    </div>
+
+
+
+                                    </div>
+
+                <div class="rich_media_area_primary sougou" id="sg_tj" style="display:none">
+
+                </div>
+
+                <div class="rich_media_area_extra">
+
+                    
+                                        <div class="mpda_bottom_container" id="js_bottom_ad_area">
+                        
+                    </div>
+                                        
+                    <div id="js_iframetest" style="display:none;"></div>
+                                        
+                                    </div>
+               
+            </div>
+            <div id="js_pc_qr_code" class="qr_code_pc_outer" style="display: block;">
+                <div class="qr_code_pc_inner">
+                    <div class="qr_code_pc">
+                        <img id="js_pc_qr_code_img" class="qr_code_pc_img" src="./卫风-氓_files/qrcode">
+                        <p>微信扫一扫<br>关注该公众号</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+        
+        <script nonce="MOONSAFE_NONCE_1467805560">
+    var __DEBUGINFO = {
+        debug_js : "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/debug/console2ca724.js",
+        safe_js : "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/safe/moonsafe2ea69c.js",
+        res_list: []
+    };
+</script>
+        <script nonce="MOONSAFE_NONCE_1467805560">window.moon_map = {"appmsg/emotion/caret.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/caret278965.js","biz_wap/jsapi/cardticket.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/cardticket275627.js","appmsg/emotion/map.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/map278965.js","appmsg/emotion/textarea.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/textarea27cdc5.js","appmsg/emotion/nav.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/nav278965.js","appmsg/emotion/common.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/common278965.js","appmsg/emotion/slide.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/slide2a9cd9.js","pages/report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/report2eec22.js","pages/music_player.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/music_player2b674b.js","pages/loadscript.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/loadscript2c9cd6.js","appmsg/emotion/dom.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/dom278965.js","biz_wap/utils/hashrouter.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/hashrouter2805ea.js","a/gotoappdetail.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/gotoappdetail2ea0e6.js","a/ios.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/ios275627.js","a/android.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/android2c5484.js","a/profile.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/profile2ea0e6.js","a/mpshop.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/mpshop2ea0e6.js","a/card.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/card2ea0e6.js","biz_wap/utils/position.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/position29b1f8.js","appmsg/a_report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/a_report2e2d45.js","biz_common/utils/respTypes.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/respTypes2c57d0.js","appmsg/cmt_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cmt_tpl.html2a2c13.js","sougou/a_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/sougou/a_tpl.html2c6e7c.js","appmsg/emotion/emotion.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/emotion2a9cd9.js","biz_common/utils/report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/report275627.js","biz_common/utils/huatuo.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/huatuo293afc.js","biz_common/utils/cookie.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/cookie275627.js","pages/voice_component.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/voice_component2c5484.js","new_video/ctl.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/new_video/ctl2d441f.js","biz_common/utils/monitor.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/monitor2a30ee.js","biz_common/utils/spin.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/spin275627.js","biz_wap/jsapi/pay.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/pay275627.js","appmsg/reward_entry.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/reward_entry2e21d7.js","appmsg/comment.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/comment2ec548.js","appmsg/like.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/like2eb52b.js","appmsg/a.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/a2ea76c.js","pages/version4video.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/version4video2e481d.js","rt/appmsg/getappmsgext.rt.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/rt/appmsg/getappmsgext.rt2c21f6.js","biz_wap/utils/storage.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/storage2a74ac.js","biz_common/tmpl.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/tmpl2b3578.js","appmsg/img_copyright_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/img_copyright_tpl.html2a2c13.js","appmsg/a_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/a_tpl.html2d1390.js","biz_common/ui/imgonepx.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/ui/imgonepx275627.js","biz_common/dom/attr.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/dom/attr275627.js","biz_wap/utils/ajax.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/ajax2c7a90.js","biz_common/utils/string/html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/string/html29f4e9.js","sougou/index.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/sougou/index2c7543.js","biz_wap/safe/mutation_observer_report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/safe/mutation_observer_report2d5cb8.js","appmsg/report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/report2ecee3.js","appmsg/report_and_source.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/report_and_source2c0ff9.js","appmsg/page_pos.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/page_pos2ec4b2.js","appmsg/cdn_speed_report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cdn_speed_report2c57d0.js","appmsg/wxtopic.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/wxtopic2e4987.js","appmsg/voice.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/voice2ab8bd.js","appmsg/qqmusic.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/qqmusic2ab8bd.js","appmsg/iframe.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/iframe2ef6ca.js","appmsg/review_image.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/review_image2d0cfe.js","appmsg/outer_link.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/outer_link275627.js","biz_wap/jsapi/core.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/core2c30c1.js","biz_common/dom/event.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/dom/event275627.js","appmsg/copyright_report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/copyright_report2ec4b2.js","appmsg/cache.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cache2a74ac.js","appmsg/pay_for_reading.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/pay_for_reading2c5484.js","appmsg/async.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/async2ec84f.js","biz_wap/ui/lazyload_img.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/ui/lazyload_img2ec99a.js","biz_common/log/jserr.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/log/jserr2805ea.js","appmsg/share.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/share2ec548.js","biz_wap/utils/mmversion.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/mmversion275627.js","appmsg/cdn_img_lib.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cdn_img_lib275627.js","biz_common/utils/url/parse.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/url/parse2dd7fd.js","biz_common/dom/class.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/dom/class275627.js","biz_wap/utils/device.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/device2b3aae.js","biz_wap/jsapi/a8key.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/a8key2a30ee.js","appmsg/index.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/index2ec99a.js"};</script><script nonce="MOONSAFE_NONCE_1467805560" type="text/javascript" src="./卫风-氓_files/moon2ee9f1.js"></script>
+    <script id="topic_tpl" type="text/html">        
+        <span class="db topic_wrp">
+            <span class="topic_thumb" style="background-image:url({img_url});"></span>
+            <span class="topic_content">
+                <strong class="topic_title">{title}</strong>
+                <span class="topic_desc">{author}</span>
+                <span class="topic_info">
+                    <span class="topic_info_extra"><span class="icon_topic"></span>话题</span>
+                    <span class="topic_info_primary">相关文章{msg_num}篇</span>
+                </span>
+            </span>
+        </span>
+    </script>
+    <script id="voice_tpl" type="text/html">        
+        <span id="voice_main_<#=voiceid#>_<#=posIndex#>" class="db audio_area <#if(!musicSupport){#> unsupport<#}#>">
+            <span class="tc tips_global unsupport_tips" <#if(show_not_support!==true){#>style="display:none;"<#}#>>
+            当前浏览器不支持播放音乐或语音，请在微信或其他浏览器中播放            </span>
+            <span class="audio_wrp db">
+                <span id="voice_play_<#=voiceid#>_<#=posIndex#>" class="audio_play_area">
+                    <i class="icon_audio_default"></i>
+                    <i class="icon_audio_playing"></i>
+                    <img src="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/audio/icon_audio_unread26f1f1.png" alt="" class="pic_audio_default">
+                </span>
+                <span class="audio_length tips_global"><#=duration_str#></span>
+                <span class="db audio_info_area">
+                    <strong class="db audio_title"><#=title#></strong>
+                    <span class="audio_source tips_global"><#if(window.nickname){#>来自<#=window.nickname#><#}#></span>
+                </span>
+                <span id="voice_progress_<#=voiceid#>_<#=posIndex#>" class="progress_bar" style="width:0px;"></span>
+            </span>
+        </span>
+    </script>
+
+    <script id="qqmusic_tpl" type="text/html">        
+        <span id="qqmusic_main_<#=comment_id#>_<#=posIndex#>" class="db qqmusic_area <#if(!musicSupport){#> unsupport<#}#>">
+            <span class="tc tips_global unsupport_tips" <#if(show_not_support!==true){#>style="display:none;"<#}#>>
+            当前浏览器不支持播放音乐或语音，请在微信或其他浏览器中播放            </span>
+            <span class="db qqmusic_wrp">
+                <span class="db qqmusic_bd">
+                    <span id="qqmusic_play_<#=musicid#>_<#=posIndex#>" class="play_area">
+                        <i class="icon_qqmusic_switch"></i>
+                        <img src="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/qqmusic/icon_qqmusic_default.2x26f1f1.png" alt="" class="pic_qqmusic_default">
+                        <img src="<#=music_img#>" data-autourl="<#=audiourl#>" data-musicid="<#=musicid#>" class="qqmusic_thumb" alt="">
+                    </span>
+                                        <a id="qqmusic_home_<#=musicid#>_<#=posIndex#>" href="javascript:void(0);" class="access_area">
+                        <span class="qqmusic_songname"><#=music_name#></span>
+                        <span class="qqmusic_singername"><#=singer#></span>
+                        <span class="qqmusic_source"><img src="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/qqmusic/icon_qqmusic_source263724.png" alt=""></span>
+                    </a>
+                </span>
+            </span>       
+        </span>
+    </script>
+  <script nonce="MOONSAFE_NONCE_1467805560" type="text/javascript">
+      var not_in_mm_css = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/not_in_mm2c9cd6.css";
+      var windowwx_css = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/page_mp_article_improve_winwx2c9cd6.css";
+      var tid = "";
+      var aid = "";
+      var clientversion = "";
+      var appuin = "MzAwOTk4OTE1NA=="||"";
+
+      var source = "";
+      var scene = 75;
+      
+      var itemidx = "";
+
+      var _copyright_stat = "0";
+      var _ori_article_type = "";
+
+      var nickname = "冠冕堂皇";
+      var appmsg_type = "6";
+      var ct = "1468127691";
+      var publish_time = "2016-07-10" || "";
+      var user_name = "gh_dfdca217bbda";
+      var user_name_new = "";
+      var fakeid   = "";
+      var version   = "";
+      var is_limit_user   = "0";
+      var round_head_img = "http://mmbiz.qpic.cn/mmbiz/L8ScfAa5XykfSPzI8mjP72MibFLUvoo7ejWib4w7T66yK40212nQ2dJMf9fYocj724lbiaJoG2ybR66Bj53wvDL4A/0?wx_fmt=png";
+      var msg_title = "卫风-氓";
+      var msg_desc = "氓之蚩蚩，抱布贸丝。匪来贸丝，来即我谋。送子涉淇，至于顿丘。匪我愆期，子无良媒。将子无怒，秋以为期。乘彼垝垣";
+      var msg_cdn_url = "http://mmbiz.qpic.cn/mmbiz/L8ScfAa5XykfSPzI8mjP72MibFLUvoo7eVeWAHRDojCp2UJ2ib2RDdMY0mQ8ZWkuVo0nibMhUu1XPPPgCrunAT4MA/0?wx_fmt=jpeg";
+      var msg_link = "http://mp.weixin.qq.com/s?__biz=MzAwOTk4OTE1NA==&amp;tempkey=1hA8IBum5K5TRTUKOwPCkeieQgGlTbxlWTgOeM45f43yEmcK7uOFgJ6MGxQ6MvMaqEEXqTZukM3Lmq0%2BK8nLTPc45QojOhSeBIQgC96WLNVcznjUoVkNn8SkpWSIqegvGty7qMjuu4Y02ZI0sHjGEA%3D%3D&amp;#rd";
+      var user_uin = "0"*1;
+      var msg_source_url = '';
+      var img_format = 'jpeg';
+      var srcid = '';
+      var req_id = '1015rxmZEn1Mm4uzj1qJyJBu';
+      var networkType;
+      var appmsgid = '' || '100000080'|| "100000080";
+      var comment_id = "0" * 1;
+      var comment_enabled = "" * 1;
+      var is_need_reward = "0" * 1;
+      var is_https_res = ("" * 1) && (location.protocol == "https:");
+
+      var devicetype = "";
+      var source_encode_biz = "";
+      // var source_username = "";
+      // var profile_ext_signature = "" || "";
+      var reprint_ticket = "";
+      var source_mid = "";
+      var source_idx = "";
+
+      var show_comment = "";
+      var __appmsgCgiData = {
+            can_use_page : "0"*1,
+            is_wxg_stuff_uin : "0"*1,
+            card_pos : "",
+            copyright_stat : "0",
+            source_biz : "",
+            hd_head_img : "http://wx.qlogo.cn/mmhead/Q3auHgzwzM5f1UviauUGGgPibaWv2KCGg2752lRKb3fHJKicvARAZlQibg/0"||(window.location.protocol+"//"+window.location.host + "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/pic/appmsg/pic_rumor_link.2x264e76.jpg")
+      };
+      var _empty_v = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/pic/pages/voice/empty26f1f1.mp3";
+
+      var copyright_stat = "0" * 1;
+
+      var pay_fee = "" * 1;
+      var pay_timestamp = "";
+      var need_pay = "" * 1;
+
+      var need_report_cost = "0" * 1;
+      var use_tx_video_player = "0" * 1;
+
+      var friend_read_source = "" || "";
+      var friend_read_version = "" || "";
+      var friend_read_class_id = "" || "";
+
+      var is_only_read = "1" * 1;
+      var read_num = "1" * 1;
+      var like_num = "0" * 1;
+      var liked = "false" == 'true' ? true : false;
+      var is_temp_url = "1hA8IBum5K5TRTUKOwPCkeieQgGlTbxlWTgOeM45f43yEmcK7uOFgJ6MGxQ6MvMaqEEXqTZukM3Lmq0&amp;nbsp;K8nLTPc45QojOhSeBIQgC96WLNVcznjUoVkNn8SkpWSIqegvGty7qMjuu4Y02ZI0sHjGEA==" ? 1 : 0;
+      var send_time = "1468136271";
+
+      var topic_default_img = 'http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/topic/pic_book_thumb.2x2e4987.png';
+
+      // 话题卡片相关数据
+      var wxtopic = {
+        isbn : ""    // 书籍
+      };
+
+      var svr_time = "1468136271" * 1;
+      
+            window.wxtoken = "";
+          if(!!window.__initCatch){
+        window.__initCatch({
+            idkey : 27613,
+            startKey : 0,
+            limit : 128,
+            reportOpt : {
+                uin : uin,
+                biz : biz,
+                mid : mid,
+                idx : idx,
+                sn  : sn
+            },
+            extInfo : {
+                network_rate : 0.01    //网络错误采样率
+            }
+        });
+    }
+  </script>
+  <script nonce="MOONSAFE_NONCE_1467805560" type="text/javascript">
+    var real_show_page_time = +new Date();
+    if (!!window.addEventListener){
+        window.addEventListener("load", function(){
+            window.onload_endtime = +new Date();
+        });
+    }
+          seajs.use('appmsg/index.js');
+  </script>
+
+    
+
+<!--tailTrap<body></body><head></head><html></html>-->
+ 
+</body><style type="text/css" id="21470393660"></style></html>
